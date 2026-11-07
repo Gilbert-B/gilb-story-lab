@@ -1,0 +1,16 @@
+﻿QA ID,Area,Requirement,Verification method,Status
+QA-01,Editorial,Exact narration v1.0 unchanged,Compare audio transcript to locked narration file,Not started
+QA-02,Data,34 tile identities and counts consistent,34=24 clean+10 other; 24=13 zero-zero+11 other clean,Not started
+QA-03,Data,Scoreless identity consistent,18=13 zero-zero+5 other scoreless; avoid double counting,Not started
+QA-04,Data,League benchmark apples-to-apples,"Both values goals per team per match, using zero-baseline bars",Not started
+QA-05,Data,All publication claims approved,Every spoken and visual statistic tied to accepted evidence records,Not started
+QA-06,Brand,Approved GilB visual style used,"Midnight/ivory/amber/teal, no generic stadium clutter",Not started
+QA-07,Design,Mobile legibility,"Headlines, bars, tiles checked on phone portrait",Not started
+QA-08,Design,Vertical safe zones,Avoid native app UI overlays right and bottom,Not started
+QA-09,Animation,Persistent grid transitions,Scene 03→04→05 uses same 34 tile IDs; 09 reuses tiles honestly,Not started
+QA-10,Audio,Voice-led timing verified,"Use actual recorded narration to set final timestamps, avoid cutoffs",Not started
+QA-11,Audio,Music and SFX properly licensed,Keep rights manifest or create original sounds,Not started
+QA-12,Accessibility,Captions present and accurate,"Check spelling, contrast and safe area; no important text behind UI",Not started
+QA-13,Production,Technical export test,"1080×1920 9:16, 30fps, H.264/AAC, captions review",Not started
+QA-14,Registry,Production assets and audit logged,"Registry contains approved interactive storyboard + draft blueprint, no publish status",Not started
+QA-15,Gate,Owner approves actual preview and factual claims,No publishing or stage Ready to publish without owner approval,Not started

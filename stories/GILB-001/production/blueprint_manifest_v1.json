@@ -1,0 +1,162 @@
+{
+  "story_id": "GILB-001",
+  "blueprint_version": "v1.0",
+  "status": "Draft — owner review",
+  "narration": "stories/GILB-001/scripts/narration_v1_approved.md",
+  "storyboard": "stories/GILB-001/storyboards/interactive/index.html",
+  "aspect_ratio": "9:16",
+  "master_resolution": {
+    "width": 1080,
+    "height": 1920
+  },
+  "estimated_duration_seconds": 104,
+  "timing_rule": "Replace estimated cues with voiceover timings after narration recording; preserve locked wording",
+  "palette": {
+    "midnight": "#101C2B",
+    "ivory": "#F3F0E8",
+    "amber": "#D9AB56",
+    "teal": "#36A7A3"
+  },
+  "fonts": [
+    "Manrope",
+    "Inter",
+    "system sans-serif fallback"
+  ],
+  "content_safe_region_px": {
+    "left": 110,
+    "right": 895,
+    "top": 260,
+    "bottom": 1490
+  },
+  "frame_rate": 30,
+  "delivery": "MP4 H.264, AAC audio, 1080x1920, 9:16, readable captions; export after approvals",
+  "claims_approved_for_publication": false,
+  "scenes": [
+    {
+      "id": "01",
+      "start_s": 0,
+      "duration_s": 8,
+      "end_s": 8,
+      "headline": "24 clean sheets. No title.",
+      "narration": "What if I told you a Ghana Premier League club kept 24 clean sheets in 34 matches... and still didn’t win the title?",
+      "evidence_refs": "EV-001; EV-002"
+    },
+    {
+      "id": "02",
+      "start_s": 8,
+      "duration_s": 7,
+      "end_s": 15,
+      "headline": "HEARTS OF OAK · 15 CONCEDED",
+      "narration": "In the 2025/26 season, Hearts of Oak conceded just 15 goals throughout the entire league campaign.",
+      "evidence_refs": "EV-001; EV-002; needs claim mapping for 15"
+    },
+    {
+      "id": "03",
+      "start_s": 15,
+      "duration_s": 6,
+      "end_s": 21,
+      "headline": "24 CLEAN SHEETS / 34 MATCHES",
+      "narration": "They kept an incredible 24 clean sheets.",
+      "evidence_refs": "EV-001"
+    },
+    {
+      "id": "04",
+      "start_s": 21,
+      "duration_s": 9,
+      "end_s": 30,
+      "headline": "13 OF 24 ENDED 0–0",
+      "narration": "But here’s the surprising part. 13 of those clean sheets ended in goalless draws.",
+      "evidence_refs": "EV-004"
+    },
+    {
+      "id": "05",
+      "start_s": 30,
+      "duration_s": 6,
+      "end_s": 36,
+      "headline": "NEITHER TEAM SCORED",
+      "narration": "Thirteen matches where their opponents couldn’t score... but neither could Hearts.",
+      "evidence_refs": "EV-004"
+    },
+    {
+      "id": "06",
+      "start_s": 36,
+      "duration_s": 7,
+      "end_s": 43,
+      "headline": "DEFENCE ≠ ATTACK",
+      "narration": "And that’s the problem. Football isn’t just about stopping goals. You also have to score them.",
+      "evidence_refs": "Editorial bridge"
+    },
+    {
+      "id": "07",
+      "start_s": 43,
+      "duration_s": 7,
+      "end_s": 50,
+      "headline": "25 GOALS / 34 GAMES",
+      "narration": "Hearts managed only 25 goals in 34 matches.",
+      "evidence_refs": "AN-002; needs EV claim mapping"
+    },
+    {
+      "id": "08",
+      "start_s": 50,
+      "duration_s": 8,
+      "end_s": 58,
+      "headline": "HEARTS 0.74  |  LEAGUE 1.02",
+      "narration": "That’s an average of just 0.74 goals per game, compared to the league average of 1.02.",
+      "evidence_refs": "GFA goals total and league matches; verify final 627/306 metric"
+    },
+    {
+      "id": "09",
+      "start_s": 58,
+      "duration_s": 7,
+      "end_s": 65,
+      "headline": "18 MATCHES WITHOUT A GOAL",
+      "narration": "In fact, they failed to score in 18 matches.",
+      "evidence_refs": "AN-001; AN-004; need matching evidence"
+    },
+    {
+      "id": "10",
+      "start_s": 65,
+      "duration_s": 9,
+      "end_s": 74,
+      "headline": "BOTH LOST 6",
+      "narration": "Now, compare that with the eventual champions, Medeama. Both clubs lost exactly six matches.",
+      "evidence_refs": "EV-005"
+    },
+    {
+      "id": "11",
+      "start_s": 74,
+      "duration_s": 8,
+      "end_s": 82,
+      "headline": "MEDEAMA 17 | HEARTS 13",
+      "narration": "But while Medeama won 17 games, Hearts managed just 13.",
+      "evidence_refs": "EV-005"
+    },
+    {
+      "id": "12",
+      "start_s": 82,
+      "duration_s": 8,
+      "end_s": 90,
+      "headline": "54 vs 62 → 8-POINT GAP",
+      "narration": "And that difference in wins and draws left Hearts eight points behind the champions.",
+      "evidence_refs": "EV-005; EV-002"
+    },
+    {
+      "id": "13",
+      "start_s": 90,
+      "duration_s": 9,
+      "end_s": 99,
+      "headline": "DEFENCE ALONE WASN’T ENOUGH",
+      "narration": "Hearts had an extraordinary defence. But they couldn’t turn enough of those clean sheets into victories.",
+      "evidence_refs": "Editorial interpretation supported by results"
+    },
+    {
+      "id": "14",
+      "start_s": 99,
+      "duration_s": 5,
+      "end_s": 104,
+      "headline": "UNPACKED BY GILB · THERE’S MORE TO THE STORY",
+      "narration": "Unpacked by GilB. There’s more to the story.",
+      "evidence_refs": "Brand approval"
+    }
+  ]
+}
