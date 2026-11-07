@@ -1,0 +1,17 @@
+{
+  "records": [
+    {
+      "id": "DEC-001",
+      "story_id": "ALL",
+      "type": "Decision",
+      "description": "Use approved GilB scope as editorial and brand baseline",
+      "priority": "High",
+      "owner": "GilB",
+      "opened_on": "2026-11-07",
+      "due": "",
+      "status": "Closed",
+      "resolution": "Approved by user",
+      "next_action": "User has edited their copy of the scope document; no updated copy requested"
+    }
+  ]
+}

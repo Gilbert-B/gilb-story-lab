@@ -1,0 +1,4 @@
+﻿id,story_id,input_dataset_ids,question,approach,finding,run_date,status,output_file,peer_check,supporting_evidence_id,repro_notes,limitations
+AN-001,GILB-001,DATA-001,Count clean sheets match by match,Fixture-level goals conceded = 0; reconcile league rounds,,,Not started,,,,Awaiting match-level data,Recalculate before using 24 in a published headline
+AN-002,GILB-001,DATA-001,"Compare goals scored, draws and league finish",Check team results and recompute points,,,Not started,,,,Awaiting match-level data,Investigate alternative narratives if the initial question weakens
+AN-003,GILB-002,DATA-002,Compare subscription market shares,Compute operator share of total subscriptions,,,Not started,,,,Awaiting quarterly dataset,Disclose market-share denominator

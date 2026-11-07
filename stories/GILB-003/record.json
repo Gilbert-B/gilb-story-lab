@@ -1,0 +1,43 @@
+{
+  "story": {
+    "id": "GILB-003",
+    "title": "How different are Ghana's districts?",
+    "pillar": "Ghana by region & district",
+    "angle": "District comparison",
+    "visual_format": "The Hidden Gap",
+    "audience": "Ghanaian public and diaspora",
+    "priority": "Medium",
+    "stage": "Idea",
+    "editorial_decision": "Candidate",
+    "claim_confidence": "Unverified",
+    "added_on": "2026-11-07",
+    "target_publish": "",
+    "owner": "GilB",
+    "next_action": "Choose one comparable census indicator and test the district export",
+    "blocker": "Avoid mixing reference years",
+    "video_url": ""
+  },
+  "datasets": [
+    {
+      "id": "DATA-003",
+      "publisher": "Ghana Statistical Service",
+      "name": "Population / housing census StatsBank",
+      "source_url": "https://statsbank.statsghana.gov.gh/index.html",
+      "reference_period": "2021 census",
+      "granularity": "District",
+      "classification": "Source lead",
+      "acquisition_status": "Not downloaded",
+      "acquired_on": "",
+      "raw_file": "",
+      "clean_file": "",
+      "reuse_license": "Check dataset reuse terms",
+      "quality_next_check": "Verify indicator definitions, coverage and missing districts",
+      "owner": "GilB"
+    }
+  ],
+  "analyses": [],
+  "evidence": [],
+  "assets": [],
+  "posts": [],
+  "issues": []
+}

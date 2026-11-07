@@ -1,0 +1,147 @@
+{
+  "story": {
+    "id": "GILB-001",
+    "title": "Hearts of Oak's defensive paradox",
+    "pillar": "Sports & competition",
+    "angle": "Historical comparison",
+    "visual_format": "The Data Knockout",
+    "audience": "Football fans",
+    "priority": "High",
+    "stage": "Research queued",
+    "editorial_decision": "Candidate",
+    "claim_confidence": "Unverified",
+    "added_on": "2026-11-07",
+    "target_publish": "",
+    "owner": "GilB",
+    "next_action": "Get fixture-level results and independently reconcile key figures",
+    "blocker": "24 clean sheets is a research lead, NOT cleared for publication",
+    "video_url": ""
+  },
+  "datasets": [
+    {
+      "id": "DATA-001",
+      "publisher": "Ghana Football Association",
+      "name": "Match results / fixtures",
+      "source_url": "https://www.ghanafa.org/",
+      "reference_period": "2025/26 (proposed)",
+      "granularity": "Match-level",
+      "classification": "Source lead",
+      "acquisition_status": "Not downloaded",
+      "acquired_on": "",
+      "raw_file": "",
+      "clean_file": "",
+      "reuse_license": "Check permitted reuse",
+      "quality_next_check": "Confirm official fixtures and result completeness",
+      "owner": "GilB"
+    }
+  ],
+  "analyses": [
+    {
+      "id": "AN-001",
+      "input_dataset_ids": "DATA-001",
+      "question": "Count clean sheets match by match",
+      "approach": "Fixture-level goals conceded = 0; reconcile league rounds",
+      "finding": "",
+      "run_date": "",
+      "status": "Not started",
+      "output_file": "",
+      "peer_check": "",
+      "supporting_evidence_id": "",
+      "repro_notes": "Awaiting match-level data",
+      "limitations": "Recalculate before using 24 in a published headline"
+    },
+    {
+      "id": "AN-002",
+      "input_dataset_ids": "DATA-001",
+      "question": "Compare goals scored, draws and league finish",
+      "approach": "Check team results and recompute points",
+      "finding": "",
+      "run_date": "",
+      "status": "Not started",
+      "output_file": "",
+      "peer_check": "",
+      "supporting_evidence_id": "",
+      "repro_notes": "Awaiting match-level data",
+      "limitations": "Investigate alternative narratives if the initial question weakens"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "EV-001",
+      "claim": "Hearts of Oak recorded 24 clean sheets",
+      "source_dataset_id": "DATA-001",
+      "source_url": "",
+      "proof_file": "",
+      "verification_status": "Needs verification",
+      "checked_by": "",
+      "checked_on": "",
+      "safe_to_publish": "No",
+      "qualification": "Recalculate from all relevant fixtures before narrating"
+    },
+    {
+      "id": "EV-002",
+      "claim": "Hearts of Oak finished third in the league",
+      "source_dataset_id": "DATA-001",
+      "source_url": "",
+      "proof_file": "",
+      "verification_status": "Needs verification",
+      "checked_by": "",
+      "checked_on": "",
+      "safe_to_publish": "No",
+      "qualification": "Reconcile final league table to match results"
+    }
+  ],
+  "assets": [
+    {
+      "id": "AS-001",
+      "asset_type": "Narration script",
+      "version": "v0",
+      "name": "GilB Pilot 001 - Draft narration",
+      "path": "",
+      "status": "Planned",
+      "owner": "GilB",
+      "updated_on": "",
+      "quality_review": "Pending",
+      "notes": "Do not write a factual script before evidence verification"
+    },
+    {
+      "id": "AS-002",
+      "asset_type": "Storyboard",
+      "version": "v0",
+      "name": "GilB Pilot 001 - Storyboard",
+      "path": "",
+      "status": "Planned",
+      "owner": "GilB",
+      "updated_on": "",
+      "quality_review": "Pending",
+      "notes": "Animated stats must be generated from verified figures"
+    },
+    {
+      "id": "AS-003",
+      "asset_type": "Final video",
+      "version": "v0",
+      "name": "GilB Pilot 001 - Vertical master",
+      "path": "",
+      "status": "Not started",
+      "owner": "GilB",
+      "updated_on": "",
+      "quality_review": "Pending",
+      "notes": "Target vertical 9:16, captions, source attribution"
+    }
+  ],
+  "posts": [],
+  "issues": [
+    {
+      "id": "ISS-001",
+      "type": "Research risk",
+      "description": "24 clean sheets needs independent match-level verification",
+      "priority": "High",
+      "owner": "GilB",
+      "opened_on": "2026-11-07",
+      "due": "",
+      "status": "Open",
+      "resolution": "",
+      "next_action": "Should block publication of that numerical claim until reconciled"
+    }
+  ]
+}

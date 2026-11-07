@@ -1,0 +1,43 @@
+{
+  "story": {
+    "id": "GILB-004",
+    "title": "The cedi-dollar exchange-rate story",
+    "pillar": "Money & everyday Ghana",
+    "angle": "Historical trend",
+    "visual_format": "Ghana Over Time",
+    "audience": "General Ghanaian audience",
+    "priority": "Medium",
+    "stage": "Idea",
+    "editorial_decision": "Candidate",
+    "claim_confidence": "Unverified",
+    "added_on": "2026-11-07",
+    "target_publish": "",
+    "owner": "GilB",
+    "next_action": "Acquire an official time series and define the comparison period",
+    "blocker": "Clearly distinguish exchange-rate measures",
+    "video_url": ""
+  },
+  "datasets": [
+    {
+      "id": "DATA-004",
+      "publisher": "Bank of Ghana",
+      "name": "Historical exchange-rate statistics",
+      "source_url": "https://www.bog.gov.gh/economic-data/",
+      "reference_period": "TBD",
+      "granularity": "Month / day",
+      "classification": "Source lead",
+      "acquisition_status": "Not downloaded",
+      "acquired_on": "",
+      "raw_file": "",
+      "clean_file": "",
+      "reuse_license": "Check series license",
+      "quality_next_check": "Specify official rate and time window",
+      "owner": "GilB"
+    }
+  ],
+  "analyses": [],
+  "evidence": [],
+  "assets": [],
+  "posts": [],
+  "issues": []
+}

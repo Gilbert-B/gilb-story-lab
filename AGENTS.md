@@ -1,0 +1,3 @@
+# GilB repo agent entrypoint
+
+Read `docs/WORKING_RULES.md` and `README.md` before doing story work. Keep `stories/GILB-###/record.json` updated as a byproduct of research, analysis and production. The story JSON is the source of truth; NEVER edit `exports/*.csv` or `exports/index.html` directly. Use `python tools/registry.py` to create IDs, add records, validate, and build. Existing story ideas are NOT verified findings. Explicit user approval is required before claiming a result is safe to publish. Preserve the user's edited and approved scope as authority. After each material action, commit source changes and regenerated views if Git is available, otherwise provide the exact file changes for the user to apply.

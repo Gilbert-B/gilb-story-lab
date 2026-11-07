@@ -1,0 +1,71 @@
+{
+  "story": {
+    "id": "GILB-002",
+    "title": "Who controls Ghana's mobile internet subscriptions?",
+    "pillar": "Technology & changing Ghana",
+    "angle": "Market comparison",
+    "visual_format": "The Unexpected Winner",
+    "audience": "General Ghanaian audience",
+    "priority": "High",
+    "stage": "Idea",
+    "editorial_decision": "Candidate",
+    "claim_confidence": "Unverified",
+    "added_on": "2026-11-07",
+    "target_publish": "",
+    "owner": "GilB",
+    "next_action": "Download NCA quarterly data and check definitions",
+    "blocker": "Subscriptions are not unique people",
+    "video_url": ""
+  },
+  "datasets": [
+    {
+      "id": "DATA-002",
+      "publisher": "National Communications Authority",
+      "name": "Quarterly statistical dashboard",
+      "source_url": "https://statisticaldashboard.nca.org.gh/",
+      "reference_period": "2026 (proposed)",
+      "granularity": "Operator-quarter",
+      "classification": "Source lead",
+      "acquisition_status": "Not downloaded",
+      "acquired_on": "",
+      "raw_file": "",
+      "clean_file": "",
+      "reuse_license": "Check dashboard terms",
+      "quality_next_check": "Get CSV/Excel or reproducible table export",
+      "owner": "GilB"
+    }
+  ],
+  "analyses": [
+    {
+      "id": "AN-003",
+      "input_dataset_ids": "DATA-002",
+      "question": "Compare subscription market shares",
+      "approach": "Compute operator share of total subscriptions",
+      "finding": "",
+      "run_date": "",
+      "status": "Not started",
+      "output_file": "",
+      "peer_check": "",
+      "supporting_evidence_id": "",
+      "repro_notes": "Awaiting quarterly dataset",
+      "limitations": "Disclose market-share denominator"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "EV-003",
+      "claim": "One network has a dominant share of mobile internet subscriptions",
+      "source_dataset_id": "DATA-002",
+      "source_url": "",
+      "proof_file": "",
+      "verification_status": "Needs verification",
+      "checked_by": "",
+      "checked_on": "",
+      "safe_to_publish": "No",
+      "qualification": "Needs specific time period and operator denominator"
+    }
+  ],
+  "assets": [],
+  "posts": [],
+  "issues": []
+}

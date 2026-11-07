@@ -1,0 +1,3 @@
+﻿id,story_id,type,description,priority,owner,opened_on,due,status,resolution,next_action
+ISS-001,GILB-001,Research risk,24 clean sheets needs independent match-level verification,High,GilB,2026-11-07,,Open,,Should block publication of that numerical claim until reconciled
+DEC-001,ALL,Decision,Use approved GilB scope as editorial and brand baseline,High,GilB,2026-11-07,,Closed,Approved by user,User has edited their copy of the scope document; no updated copy requested

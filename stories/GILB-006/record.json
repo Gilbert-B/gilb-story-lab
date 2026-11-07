@@ -1,0 +1,43 @@
+{
+  "story": {
+    "id": "GILB-006",
+    "title": "Where are young Ghanaians struggling to find work?",
+    "pillar": "Money & everyday Ghana",
+    "angle": "Regional comparison",
+    "visual_format": "The Hidden Gap",
+    "audience": "Young workers and graduates",
+    "priority": "Medium",
+    "stage": "Idea",
+    "editorial_decision": "Candidate",
+    "claim_confidence": "Unverified",
+    "added_on": "2026-11-07",
+    "target_publish": "",
+    "owner": "GilB",
+    "next_action": "Identify consistent youth labour indicators from GSS",
+    "blocker": "Distinguish unemployment from NEET and inactivity",
+    "video_url": ""
+  },
+  "datasets": [
+    {
+      "id": "DATA-006",
+      "publisher": "Ghana Statistical Service",
+      "name": "Labour Force Survey",
+      "source_url": "https://www.statsghana.gov.gh/",
+      "reference_period": "TBD",
+      "granularity": "Age / region / survey period",
+      "classification": "Source lead",
+      "acquisition_status": "Not downloaded",
+      "acquired_on": "",
+      "raw_file": "",
+      "clean_file": "",
+      "reuse_license": "Check report reuse terms",
+      "quality_next_check": "Locate compatible youth employment tables",
+      "owner": "GilB"
+    }
+  ],
+  "analyses": [],
+  "evidence": [],
+  "assets": [],
+  "posts": [],
+  "issues": []
+}

@@ -1,0 +1,43 @@
+{
+  "story": {
+    "id": "GILB-005",
+    "title": "Which Ghana chart hits lasted the longest?",
+    "pillar": "Music, entertainment & culture",
+    "angle": "Ranking",
+    "visual_format": "The Unexpected Winner",
+    "audience": "Music fans",
+    "priority": "Medium",
+    "stage": "Idea",
+    "editorial_decision": "Candidate",
+    "claim_confidence": "Unverified",
+    "added_on": "2026-11-07",
+    "target_publish": "",
+    "owner": "GilB",
+    "next_action": "Validate Ghana-specific historical chart coverage",
+    "blocker": "No chart ranking until coverage and method are documented",
+    "video_url": ""
+  },
+  "datasets": [
+    {
+      "id": "DATA-005",
+      "publisher": "Spotify Charts",
+      "name": "Ghana chart history (if available)",
+      "source_url": "https://charts.spotify.com/",
+      "reference_period": "TBD",
+      "granularity": "Track-week/day",
+      "classification": "Source lead",
+      "acquisition_status": "Availability unconfirmed",
+      "acquired_on": "",
+      "raw_file": "",
+      "clean_file": "",
+      "reuse_license": "Check platform terms",
+      "quality_next_check": "Test historical export and ensure ranking comparability",
+      "owner": "GilB"
+    }
+  ],
+  "analyses": [],
+  "evidence": [],
+  "assets": [],
+  "posts": [],
+  "issues": []
+}

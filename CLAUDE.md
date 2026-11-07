@@ -1,0 +1,3 @@
+# Instructions for Claude Code — GilB Story Lab
+
+Read `AGENTS.md`, `docs/WORKING_RULES.md`, and `README.md` first. Automatically register research and production work in the correct `stories/GILB-###/record.json`, including dataset paths, scripts, reproducible findings, evidence status, assets, issues and next actions. Never invent findings, approvals, downloads, or videos. Never change `safe_to_publish` to Yes unless GilB expressly approves the exact checked claim. Run `python tools/registry.py validate`, `python tools/registry.py build`, and relevant tests at the end of each task. GitHub Actions will regenerate exports after source records are pushed to main.

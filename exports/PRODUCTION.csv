@@ -1,0 +1,4 @@
+﻿id,story_id,asset_type,version,name,path,status,owner,updated_on,quality_review,notes
+AS-001,GILB-001,Narration script,v0,GilB Pilot 001 - Draft narration,,Planned,GilB,,Pending,Do not write a factual script before evidence verification
+AS-002,GILB-001,Storyboard,v0,GilB Pilot 001 - Storyboard,,Planned,GilB,,Pending,Animated stats must be generated from verified figures
+AS-003,GILB-001,Final video,v0,GilB Pilot 001 - Vertical master,,Not started,GilB,,Pending,"Target vertical 9:16, captions, source attribution"

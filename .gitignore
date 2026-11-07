@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+# Large media remain in private storage; reference URLs in the registry.
+*.mp4
+*.mov
+*.mkv
+*.wav
+*.mp3
+*.psd
+# Avoid accidentally publishing unreviewed source data; approve dataset additions intentionally.
+# Keep de-identified, properly licensed raw/clean data only.

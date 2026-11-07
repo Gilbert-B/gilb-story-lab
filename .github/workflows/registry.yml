@@ -1,0 +1,47 @@
+name: Update GilB story registry
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'stories/**/record.json'
+      - 'registry/global.json'
+      - 'tools/registry.py'
+      - '.github/workflows/registry.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gilb-registry-main
+  cancel-in-progress: false
+
+jobs:
+  sync-registry:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate sources and run automated tests
+        run: |
+          python -m unittest discover -s tests -v
+          python tools/registry.py validate
+      - name: Generate dashboard and Excel-friendly CSV exports
+        run: python tools/registry.py build
+      - name: Commit refreshed registry views
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add exports/
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh GilB story registry exports"
+            git push
+          else
+            echo "Registry already up to date"
+          fi

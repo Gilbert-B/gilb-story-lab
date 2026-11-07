@@ -1,0 +1,4 @@
+﻿id,story_id,claim,source_dataset_id,source_url,proof_file,verification_status,checked_by,checked_on,safe_to_publish,approved_by,approval_date,qualification
+EV-001,GILB-001,Hearts of Oak recorded 24 clean sheets,DATA-001,,,Needs verification,,,No,,,Recalculate from all relevant fixtures before narrating
+EV-002,GILB-001,Hearts of Oak finished third in the league,DATA-001,,,Needs verification,,,No,,,Reconcile final league table to match results
+EV-003,GILB-002,One network has a dominant share of mobile internet subscriptions,DATA-002,,,Needs verification,,,No,,,Needs specific time period and operator denominator
