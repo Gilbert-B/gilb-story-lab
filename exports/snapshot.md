@@ -1,10 +1,10 @@
 # GilB Registry Snapshot
 
-**Stories:** 6  |  **Published:** 0  |  **Datasets acquired:** 0  |  **Claims approved:** 0
+**Stories:** 6  |  **Published:** 0  |  **Datasets acquired:** 1  |  **Claims approved:** 0
 
 | ID | Story | Stage | Next action |
 |---|---|---|---|
-| GILB-001 | Hearts of Oak's defensive paradox | Research queued | Get fixture-level results and independently reconcile key figures |
+| GILB-001 | Hearts of Oak's defensive paradox | Verification | Review results.json and research_findings.md; spot-check match scores and approve/select an editorial angle before scripting |
 | GILB-002 | Who controls Ghana's mobile internet subscriptions? | Idea | Download NCA quarterly data and check definitions |
 | GILB-003 | How different are Ghana's districts? | Idea | Choose one comparable census indicator and test the district export |
 | GILB-004 | The cedi-dollar exchange-rate story | Idea | Acquire an official time series and define the comparison period |
