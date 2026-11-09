@@ -7,13 +7,13 @@
     "visual_format": "The Data Knockout",
     "audience": "Football fans",
     "priority": "High",
-    "stage": "Verification",
-    "editorial_decision": "Candidate",
+    "stage": "Review",
+    "editorial_decision": "Creative benchmark approved 2026-11-08; final factual/technical publication sign-off pending",
     "claim_confidence": "Reproduced arithmetic; not approved",
     "added_on": "2026-11-07",
     "target_publish": "",
     "owner": "GilB",
-    "next_action": "Review results.json and research_findings.md; spot-check match scores and approve/select an editorial angle before scripting",
+    "next_action": "Obtain native full-resolution export and Claude source; complete evidence, audio/rights and caption QA; then approve release separately.",
     "blocker": "Owner has not approved factual claims for publication; match-results attribution required",
     "video_url": ""
   },
@@ -185,26 +185,26 @@
     {
       "id": "AS-001",
       "asset_type": "Narration script",
-      "version": "v0",
-      "name": "GilB Pilot 001 - Draft narration",
-      "path": "",
-      "status": "Planned",
+      "version": "v1.0",
+      "name": "GILB-001 — approved narration",
+      "path": "stories/GILB-001/scripts/narration_v1_approved.md",
+      "status": "Editorial wording approved; claims pending",
       "owner": "GilB",
       "updated_on": "",
-      "quality_review": "Pending",
-      "notes": "Do not write a factual script before evidence verification"
+      "quality_review": "Approved by owner for wording; factual publication sign-off pending",
+      "notes": "Versioned script. Do not silently edit v1.0."
     },
     {
       "id": "AS-002",
       "asset_type": "Storyboard",
-      "version": "v0",
-      "name": "GilB Pilot 001 - Storyboard",
-      "path": "",
-      "status": "Planned",
+      "version": "v1.0",
+      "name": "GILB-001 — draft visual storyboard",
+      "path": "stories/GILB-001/storyboards/storyboard_v1.md",
+      "status": "Retained as original static concept; interactive storyboard approved",
       "owner": "GilB",
       "updated_on": "",
-      "quality_review": "Pending",
-      "notes": "Animated stats must be generated from verified figures"
+      "quality_review": "Owner approved the interactive storyboard v1.0; static storyboard retained for history",
+      "notes": "Detailed shots at stories/GILB-001/storyboards/shots_v1.csv; estimated ~93s, final timing after recorded narration."
     },
     {
       "id": "AS-003",
@@ -217,6 +217,90 @@
       "updated_on": "",
       "quality_review": "Pending",
       "notes": "Target vertical 9:16, captions, source attribution"
+    },
+    {
+      "id": "AS-004",
+      "asset_type": "Interactive storyboard",
+      "version": "v1.0",
+      "name": "GILB-001 interactive visual storyboard v1.0",
+      "path": "stories/GILB-001/storyboards/interactive/index.html",
+      "status": "Visual design approved; factual claims pending",
+      "owner": "GilB",
+      "updated_on": "2026-11-07",
+      "quality_review": "GilB owner approved visual design on 2026-11-07; publication evidence sign-off pending",
+      "notes": "14 scene portrait HTML prototype; source shotlist and preview included."
+    },
+    {
+      "id": "AS-005",
+      "asset_type": "Production blueprint",
+      "version": "v1.0",
+      "name": "GILB-001 animation production blueprint v1.0",
+      "path": "stories/GILB-001/production/blueprint_v1.md",
+      "status": "Draft for owner approval",
+      "owner": "GilB",
+      "updated_on": "2026-11-07",
+      "quality_review": "Scene implementation plan created; owner has not yet approved production blueprint",
+      "notes": "Timing/specs: stories/GILB-001/production/scenes_v1.csv; data manifest: stories/GILB-001/production/blueprint_manifest_v1.json; claims checklist: stories/GILB-001/production/claims_to_verify_v1.csv; QA gates: stories/GILB-001/production/quality_gates_v1.csv."
+    },
+    {
+      "id": "AS-006",
+      "asset_type": "Animation draft",
+      "version": "v2.0",
+      "name": "GILB-001 full silent motion animation v2 (chronological matches)",
+      "path": "stories/GILB-001/production/full_animation_v2/GILB001_Full_Animation_Silent_Draft_v2.mp4",
+      "status": "Draft — owner review pending",
+      "owner": "GilB",
+      "updated_on": "2026-11-08",
+      "quality_review": "Technical validation complete; owner has not yet approved v2 or factual release",
+      "notes": "14 scenes / 104s / silent / 1080x1920 / match chronology data: stories/GILB-001/production/full_animation_v2/data/hearts_2025-26_chronological_matches.csv; editable code: stories/GILB-001/production/full_animation_v2/source/render.py. V1 remains preserved."
+    },
+    {
+      "id": "AS-007",
+      "asset_type": "Creative benchmark video",
+      "version": "RC1",
+      "name": "Hearts of Oak — Claude RC1 owner-approved creative benchmark",
+      "path": "stories/GILB-001/production/benchmark_rc1/GILB001_Hearts_of_Oak_Creative_Benchmark_RC1.mp4",
+      "status": "Creative benchmark approved; NOT publication cleared",
+      "owner": "GilB",
+      "updated_on": "2026-11-09",
+      "quality_review": "GilB approved as future quality baseline on 2026-11-08. Video 512x910, 30fps, 99.6s. Native 1080p and factual release checks pending.",
+      "notes": "Preserve this reference; do not overwrite prior versions."
+    },
+    {
+      "id": "AS-008",
+      "asset_type": "Production quality standard",
+      "version": "v1.0",
+      "name": "GilB all-content quality checklist",
+      "path": "docs/GilB_PRODUCTION_QUALITY_STANDARD_v1.md",
+      "status": "Approved standard for subsequent episodes",
+      "owner": "GilB",
+      "updated_on": "2026-11-09",
+      "quality_review": "Covers evidence, visual accuracy, narration, audio, captions, technical export, source retention and publication.",
+      "notes": "Preserve this reference; do not overwrite prior versions."
+    },
+    {
+      "id": "AS-009",
+      "asset_type": "Release QA tracker",
+      "version": "v1.0",
+      "name": "GILB-001 outstanding final release checks",
+      "path": "stories/GILB-001/production/benchmark_rc1/FINAL_RELEASE_QA.md",
+      "status": "Open — not signed off",
+      "owner": "GilB",
+      "updated_on": "2026-11-09",
+      "quality_review": "Native 1080x1920 master, Claude project source, final evidence review, captions and audio/rights checks still open.",
+      "notes": "Preserve this reference; do not overwrite prior versions."
+    },
+    {
+      "id": "AS-010",
+      "asset_type": "Archive manifest",
+      "version": "v1.0",
+      "name": "GILB-001 archive provenance and file hashes",
+      "path": "stories/GILB-001/production/benchmark_rc1/ASSET_MANIFEST.json",
+      "status": "Reference archive",
+      "owner": "GilB",
+      "updated_on": "2026-11-09",
+      "quality_review": "Preserved source snapshots are not Claude editable source files.",
+      "notes": "Preserve this reference; do not overwrite prior versions."
     }
   ],
   "posts": [],
@@ -232,6 +316,42 @@
       "status": "Open",
       "resolution": "Match-level recount reproduces 24 clean sheets and GFA confirms. Owner review and editorial approval outstanding.",
       "next_action": "Review the complete 34-match table; approve claims or request corrections."
+    },
+    {
+      "id": "ISS-002",
+      "type": "Release blocker",
+      "description": "BENCHMARK-RC1-EXPORT — Approved review file is 512x910; native 1080x1920 master is required before publication.",
+      "priority": "High",
+      "owner": "GilB",
+      "opened_on": "2026-11-09",
+      "due": "",
+      "status": "Open",
+      "resolution": "",
+      "next_action": "Export from Claude production project; verify native resolution. Do not upscale and label as native."
+    },
+    {
+      "id": "ISS-003",
+      "type": "Release blocker",
+      "description": "BENCHMARK-RC1-RELEASE-QA — Final match-data verification, audio/music rights, caption and mobile playback sign-off outstanding.",
+      "priority": "High",
+      "owner": "GilB",
+      "opened_on": "2026-11-09",
+      "due": "",
+      "status": "Open",
+      "resolution": "",
+      "next_action": "Use FINAL_RELEASE_QA.md and PRODUCTION_QUALITY_STANDARD_v1.md; explicitly approve every release claim."
+    },
+    {
+      "id": "ISS-004",
+      "type": "Release blocker",
+      "description": "BENCHMARK-RC1-SOURCE — Claude editable animation project not present in uploaded MP4 or reference source snapshots.",
+      "priority": "Medium",
+      "owner": "GilB",
+      "opened_on": "2026-11-09",
+      "due": "",
+      "status": "Open",
+      "resolution": "",
+      "next_action": "Add Claude code/project/assets to private versioned storage and link the canonical folder."
     }
   ]
 }

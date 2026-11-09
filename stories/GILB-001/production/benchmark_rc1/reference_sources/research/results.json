@@ -1,0 +1,40 @@
+{
+  "story_id": "GILB-001",
+  "season": "2025/26",
+  "data_provenance": "Manually transcribed RSSSF round-by-round match results",
+  "calculation_status": "Reproduced and cross-checked; NOT owner-approved for publication",
+  "hearts": {
+    "matches": 34,
+    "wins": 13,
+    "draws": 15,
+    "losses": 6,
+    "goals_for": 25,
+    "goals_against": 15,
+    "points": 54,
+    "clean_sheets": 24,
+    "goalless_draws": 13,
+    "failed_to_score": 18,
+    "clean_sheet_percentage": 70.6,
+    "goalless_draw_share_of_all_draws_pct": 86.7,
+    "scoreless_shutout_share_pct": 54.2,
+    "wins_with_clean_sheet": 11
+  },
+  "comparison": {
+    "champion": "Medeama SC",
+    "medeama_points": 62,
+    "medeama_wins": 17,
+    "medeama_draws": 11,
+    "medeama_losses": 6,
+    "points_gap_to_champion": 8,
+    "win_gap_to_champion": 4,
+    "draw_excess_vs_champion": 4,
+    "goals_for_gap_to_champion": 27,
+    "goals_conceded_advantage": 13
+  },
+  "sources": [
+    "https://www.rsssf.org/tablesg/gha2026.html",
+    "https://www.ghanafa.org/official-ghana-premier-league-table-after-the-end-of-the-2025-26-season",
+    "https://ghanafa.org/ghana-premier-league-2025-26-statistics?amp=1",
+    "https://preview.gpl.com.gh/matches?season=2025-26"
+  ]
+}

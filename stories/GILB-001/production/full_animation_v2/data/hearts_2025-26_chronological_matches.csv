@@ -1,0 +1,35 @@
+round,match_date,venue,opponent,hearts_goals,opponent_goals,clean_sheet,goalless_draw,scoreless_loss,failed_to_score,result,match_order
+1,2025-09-12,Home,Hohoe United,0,0,1,1,0,1,D,1
+2,2025-09-22,Away,Dreams FC,1,0,1,0,0,0,W,2
+3,2025-09-26,Home,Eleven Wonders,1,0,1,0,0,0,W,3
+4,2025-10-03,Away,Bechem United,0,0,1,1,0,1,D,4
+5,2025-10-13,Home,Heart of Lions,0,0,1,1,0,1,D,5
+6,2025-10-19,Away,Berekum Chelsea,2,0,1,0,0,0,W,6
+7,2025-10-26,Home,Bibiani Gold Stars,2,2,0,0,0,0,D,7
+8,2025-11-02,Away,Basake Holy Stars,2,1,0,0,0,0,W,8
+9,2025-11-09,Home,Asante Kotoko,0,1,0,0,1,1,L,9
+10,2025-11-15,Away,Swedru All Blacks,0,0,1,1,0,1,D,10
+11,2025-11-23,Away,Young Apostles,0,0,1,1,0,1,D,11
+12,2025-11-29,Home,Vision FC,1,0,1,0,0,0,W,12
+13,2025-12-07,Away,Karela United,0,2,0,0,1,1,L,13
+14,2025-12-13,Home,Nations FC,1,0,1,0,0,0,W,14
+15,2025-12-21,Away,Aduana FC,0,0,1,1,0,1,D,15
+16,2025-12-26,Home,Samartex FC,1,0,1,0,0,0,W,16
+17,2026-01-04,Away,Medeama SC,0,1,0,0,1,1,L,17
+18,2026-01-10,Away,Hohoe United,1,0,1,0,0,0,W,18
+19,2026-01-16,Home,Dreams FC,0,0,1,1,0,1,D,19
+20,2026-01-24,Away,Eleven Wonders,3,0,1,0,0,0,W,20
+21,2026-02-01,Home,Bechem United,0,0,1,1,0,1,D,21
+22,2026-02-15,Away,Asante Kotoko,1,0,1,0,0,0,W,22
+23,2026-02-22,Home,Berekum Chelsea,0,0,1,1,0,1,D,23
+24,2026-03-01,Away,Bibiani Gold Stars,1,2,0,0,0,0,L,24
+25,2026-03-08,Home,Basake Holy Stars,0,0,1,1,0,1,D,25
+26,2026-03-20,Away,Heart of Lions,0,0,1,1,0,1,D,26
+27,2026-03-29,Home,Swedru All Blacks,2,2,0,0,0,0,D,27
+28,2026-04-05,Home,Young Apostles,1,0,1,0,0,0,W,28
+29,2026-04-11,Away,Vision FC,0,1,0,0,1,1,L,29
+31,2026-05-03,Away,Nations FC,1,0,1,0,0,0,W,30
+30,2026-05-06,Home,Karela United,0,0,1,1,0,1,D,31
+32,2026-05-10,Home,Aduana FC,0,0,1,1,0,1,D,32
+33,2026-05-17,Away,Samartex FC,0,1,0,0,1,1,L,33
+34,2026-05-24,Home,Medeama SC,4,2,0,0,0,0,W,34

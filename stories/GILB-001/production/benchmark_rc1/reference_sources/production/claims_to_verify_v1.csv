@@ -1,0 +1,11 @@
+﻿Claim ID,Visible/Spoken claim,Calculation / source,Existing evidence link,Approval requirement,Scenes
+CL-001,24 clean sheets of 34,24 clean sheets from match-score dataset and GFA,EV-001,Needs publication sign-off,"03,04,13"
+CL-002,15 goals conceded,Final league table and 34-match reconciliation,EV-002 (final standings support); check source,Needs explicit claim check,02
+CL-003,13 0–0 draws,Count 13 zero-zero scorelines,EV-004,Needs publication sign-off,"04,05,13"
+CL-004,"25 goals scored, 34 matches",Final league table and 34-match reconciliation,AN-002; EV-002,Needs explicit claim check,07
+CL-005,0.74 goals per team per match,25 / 34 = 0.735294 → 0.74,AN-002,Arithmetic recheck before video,08
+CL-006,League average 1.02,League goals 627 / (306 matches × 2 teams) = 1.02451 → 1.02,GFA season summary; evidence record needed,Needs source verification and approval,08
+CL-007,18 matches without scoring,Match-level goals_for=0 count 18,AN-001; analysis results,Needs evidence entry and approval,09
+CL-008,Both teams lost six,Final standings Hearts and Medeama,EV-005,Needs publication sign-off,10
+CL-009,"Medeama 17 wins, Hearts 13",Final standings Hearts and Medeama,EV-005,Needs publication sign-off,11
+CL-010,"Hearts 54, Medeama 62; eight-point gap","Points = 3×wins + draws, 62-54=8",EV-005; EV-002,Needs publication sign-off,12

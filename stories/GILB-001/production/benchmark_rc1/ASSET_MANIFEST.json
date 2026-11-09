@@ -1,0 +1,103 @@
+{
+  "story_id": "GILB-001",
+  "release": "Creative Benchmark RC1",
+  "created_utc": "2026-11-08",
+  "publication_approved": false,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 50,
+      "sha256": "e81cf965eeb67998145ff966d0a814cdb6cb9ce0b8af7b16524d830523cb1d53"
+    },
+    {
+      "path": "FINAL_RELEASE_QA.md",
+      "bytes": 1743,
+      "sha256": "de583f9cf5700021d920a6be7dddf4860389a5de97bfc3c43297cec9c2457634"
+    },
+    {
+      "path": "GILB001_Hearts_of_Oak_Creative_Benchmark_RC1.mp4",
+      "bytes": 13748835,
+      "sha256": "400e0c0677255e9db8e963cc736fb8b7e78408cd77a3134cb61a5cd9d408e566"
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "bytes": 2296,
+      "sha256": "2829be422fad25868c0ce14f8c7161ee73fe500e28970db2526bb2d060eb070e"
+    },
+    {
+      "path": "reference_sources/README.md",
+      "bytes": 946,
+      "sha256": "8057edb10a7b5bbb99e60a15c2a85b1958d993788af977f6acba31ec9e2fd909"
+    },
+    {
+      "path": "reference_sources/production/blueprint_v1.md",
+      "bytes": 17456,
+      "sha256": "738db5e07c3a80b19344a0df0cd3462e1159a1d0ea9adce42c851732c7247602"
+    },
+    {
+      "path": "reference_sources/production/claims_to_verify_v1.csv",
+      "bytes": 1361,
+      "sha256": "191af938265d7c659c1ec3029dcbc9c9c48682f1054afebc7d76cd6e66f92a0c"
+    },
+    {
+      "path": "reference_sources/production/earlier_chatgpt_v2_renderer.py",
+      "bytes": 19485,
+      "sha256": "a003592646878834150e992b97ad725ae5a306c7657243033e10758de51c42d3"
+    },
+    {
+      "path": "reference_sources/production/scenes_v1.csv",
+      "bytes": 8526,
+      "sha256": "06577c2d9743bd260fadf8a0de46ca01bbf473d4ffa3b8c071f4bf2306e989d1"
+    },
+    {
+      "path": "reference_sources/research/analyze_matches.py",
+      "bytes": 7608,
+      "sha256": "aaceb3e9b49002b894d5c59f635bce8fc0f98ce5754619891cf40801728fe1c4"
+    },
+    {
+      "path": "reference_sources/research/hearts_chronological_matches_v2.csv",
+      "bytes": 1847,
+      "sha256": "25ab79a1d9f8659b566b073b0fb5c9de66e3e6ec65b884017196ef0b3bf8d310"
+    },
+    {
+      "path": "reference_sources/research/hearts_match_metrics.csv",
+      "bytes": 1441,
+      "sha256": "63e2b2a201b3cdd020e3827aaea81266dc4a41db61d6665e3e463c496e62062f"
+    },
+    {
+      "path": "reference_sources/research/hearts_results_transcribed.csv",
+      "bytes": 918,
+      "sha256": "fe55829a2284416192010993e8ffb291df22400525b030dc65b1a167169b82c7"
+    },
+    {
+      "path": "reference_sources/research/research_findings.md",
+      "bytes": 1884,
+      "sha256": "fec2713e5ccf9b5688d8aefb4dbb8230fa800eeff156eb6636293bdad53a4fe9"
+    },
+    {
+      "path": "reference_sources/research/results.json",
+      "bytes": 1236,
+      "sha256": "c955874702a8fffb2fbf789e457cd7444e91e2a0f6e0b6ceba62fb7bc1e6e639"
+    },
+    {
+      "path": "reference_sources/research/source_register.md",
+      "bytes": 2661,
+      "sha256": "e4e66dd602df456ca1da3aee927efc9b897a328699d16f6f797a4cb2d20b7713"
+    },
+    {
+      "path": "reference_sources/script/narration_v1_approved.md",
+      "bytes": 2011,
+      "sha256": "e6a333326e60612624a189fcfb3a0be0bbf800ddd13ec4d48dee5d139e1f2ee6"
+    },
+    {
+      "path": "reference_sources/storyboard/interactive_index.html",
+      "bytes": 33478,
+      "sha256": "de25662765411629012e54f7241f41213564b297b4f00baa4001765180fe5d28"
+    },
+    {
+      "path": "reference_sources/storyboard/shotlist.csv",
+      "bytes": 4609,
+      "sha256": "dae2daa130649964b7c64e95fe117a13c0acde1ccd9bb72c9c87c83b12653324"
+    }
+  ]
+}

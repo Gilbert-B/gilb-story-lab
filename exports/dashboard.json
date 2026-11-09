@@ -3,9 +3,9 @@
   "published_stories": 0,
   "datasets_acquired": 1,
   "verified_approved_claims": 0,
-  "open_issues": 1,
+  "open_issues": 4,
   "stages": {
     "Idea": 5,
-    "Verification": 1
+    "Review": 1
   }
 }
