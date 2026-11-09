@@ -1,18 +1,19 @@
 {
   "story_id": "GILB-001",
-  "release": "Creative Benchmark RC1",
+  "release": "Creative Benchmark RC1 corrected metadata v1.1",
   "created_utc": "2026-11-08",
   "publication_approved": false,
+  "original_master_confirmation": "Owner confirms original full-resolution export exists; original not included",
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 50,
-      "sha256": "e81cf965eeb67998145ff966d0a814cdb6cb9ce0b8af7b16524d830523cb1d53"
+      "bytes": 93,
+      "sha256": "5c2a8526a8f411334b812f519a296b8f97545b463a960a8eb9558cf0eb009afe"
     },
     {
       "path": "FINAL_RELEASE_QA.md",
-      "bytes": 1743,
-      "sha256": "de583f9cf5700021d920a6be7dddf4860389a5de97bfc3c43297cec9c2457634"
+      "bytes": 2345,
+      "sha256": "35049493b67cb247ad54c3abc6fee02955d40182dc67bd0fb7a84294a5ce9207"
     },
     {
       "path": "GILB001_Hearts_of_Oak_Creative_Benchmark_RC1.mp4",
@@ -20,9 +21,14 @@
       "sha256": "400e0c0677255e9db8e963cc736fb8b7e78408cd77a3134cb61a5cd9d408e566"
     },
     {
+      "path": "MASTER_STATUS.json",
+      "bytes": 919,
+      "sha256": "cc4c036ce8ba188d09f1887c306074988fd0ae2657eeb8aafeab634832c4fe79"
+    },
+    {
       "path": "RELEASE_NOTES.md",
-      "bytes": 2296,
-      "sha256": "2829be422fad25868c0ce14f8c7161ee73fe500e28970db2526bb2d060eb070e"
+      "bytes": 2398,
+      "sha256": "21e2ab26b833ec9c6f14ccf8c7f950cfc22ae7bf81be9c911c8facf8068aca19"
     },
     {
       "path": "reference_sources/README.md",

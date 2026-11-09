@@ -4,7 +4,7 @@
 
 | ID | Story | Stage | Next action |
 |---|---|---|---|
-| GILB-001 | Hearts of Oak's defensive paradox | Review | Obtain native full-resolution export and Claude source; complete evidence, audio/rights and caption QA; then approve release separately. |
+| GILB-001 | Hearts of Oak's defensive paradox | Review | Archive and inspect existing original full-resolution master (no re-export); preserve Claude source; complete match-data, rights, captions and final release QA. |
 | GILB-002 | Who controls Ghana's mobile internet subscriptions? | Idea | Download NCA quarterly data and check definitions |
 | GILB-003 | How different are Ghana's districts? | Idea | Choose one comparable census indicator and test the district export |
 | GILB-004 | The cedi-dollar exchange-rate story | Idea | Acquire an official time series and define the comparison period |

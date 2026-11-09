@@ -1,118 +1,170 @@
 #!/usr/bin/env python3
-"""Safely record the GilB-001 creative benchmark in an existing GilB Story Lab registry.
+"""Register or correct the GILB-001 creative benchmark (v1.1).
 
-Idempotent: re-running does not add duplicate assets/issues/audit events.
-No publication, evidence approval, or post metadata is modified.
+Owner confirmed original export full-size; smaller copy is only chat compression.
+Idempotent; does not approve claims or publish the video.
 """
 from __future__ import annotations
-import json, sys, hashlib
+import json,sys,hashlib,subprocess,shutil
 from pathlib import Path
 import registry
 
 ROOT=Path(__file__).resolve().parents[1]
 SID='GILB-001'
-RECORD=ROOT/'stories'/SID/'record.json'
+REC=ROOT/'stories'/SID/'record.json'
 BASE=f'stories/{SID}/production/benchmark_rc1/'
-MP4=BASE+'GILB001_Hearts_of_Oak_Creative_Benchmark_RC1.mp4'
+PREVIEW=BASE+'GILB001_Hearts_of_Oak_Creative_Benchmark_RC1.mp4'
+MASTER=BASE+'GILB001_Hearts_of_Oak_Original_Master.mp4'
 QA=BASE+'FINAL_RELEASE_QA.md'
+NOTES=BASE+'RELEASE_NOTES.md'
+STATUS=BASE+'MASTER_STATUS.json'
 MANIFEST=BASE+'ASSET_MANIFEST.json'
 STANDARD='docs/GilB_PRODUCTION_QUALITY_STANDARD_v1.md'
-RELEASE=BASE+'RELEASE_NOTES.md'
+OWNER_DATE='2026-11-08'
+
+
+def get_video_metadata(path):
+    cmd=shutil.which('ffprobe')
+    if not cmd:return None
+    try:
+        p=subprocess.run([cmd,'-v','error','-select_streams','v:0','-show_entries','stream=width,height,avg_frame_rate',
+                          '-of','json',str(path)],capture_output=True,text=True,check=True,timeout=15)
+        info=json.loads(p.stdout)
+        return info['streams'][0] if info.get('streams') else None
+    except Exception as e:
+        print('NOTE: ffprobe inspection unavailable:',str(e));return None
+
+
+def sha(path):
+    h=hashlib.sha256()
+    with open(path,'rb') as f:
+        for chunk in iter(lambda:f.read(1024*1024),b''):h.update(chunk)
+    return h.hexdigest()
 
 
 def main():
-    needed=(MP4,QA,MANIFEST,STANDARD,RELEASE)
-    for rel in needed:
-        if not (ROOT/rel).is_file():
-            raise RuntimeError(f'Missing file {rel}. Copy extracted package contents into repo root.')
+    for rel in [PREVIEW,QA,NOTES,STATUS,MANIFEST,STANDARD]:
+        if not (ROOT/rel).is_file():raise RuntimeError(f'Missing {rel}; copy the complete ZIP into repository root.')
+    if not REC.exists():raise RuntimeError(f'Missing {REC}; run this inside the GilB repo.')
     mani=json.loads((ROOT/MANIFEST).read_text(encoding='utf-8'))
-    expected=next((x['sha256'] for x in mani['files'] if x['path']==Path(MP4).name),None)
-    actual=hashlib.sha256((ROOT/MP4).read_bytes()).hexdigest()
-    if not expected or expected!=actual:
-        raise RuntimeError('Video SHA-256 does not match package manifest; do not register damaged video.')
-    if not RECORD.exists():
-        raise RuntimeError('Missing stories/GILB-001/record.json. Use the existing GilB repo.')
-    original=RECORD.read_text(encoding='utf-8')
-    obj=json.loads(original)
-    st=obj.get('story',{})
-    if st.get('id')!=SID:raise RuntimeError('Wrong story record ID.')
+    expected=next((f.get('sha256') for f in mani.get('files',[]) if f.get('path')==Path(PREVIEW).name),None)
+    preview_sha=sha(ROOT/PREVIEW)
+    if not expected or preview_sha!=expected:raise RuntimeError('Compressed review video differs from package manifest.')
+    original_txt=REC.read_text(encoding='utf-8')
+    obj=json.loads(original_txt);st=obj.get('story',{})
+    if st.get('id')!=SID:raise RuntimeError('Wrong story ID in record.')
     if st.get('stage') in ('Ready to publish','Published','Archived') or any(p.get('publish_status')=='Published' for p in obj.get('posts',[])):
-        raise RuntimeError('Story is already ready/published/archived. Review manually to avoid downgrading release status.')
-    changes=[]
-    used={r.get('id') for _,s in registry.load(ROOT)[0] for k in ('datasets','analyses','evidence','assets','posts','issues') for r in s.get(k,[])}
-    used|={r.get('id') for r in registry.load(ROOT)[1].get('records',[])}
-    def new_id(prefix):
+        raise RuntimeError('Story progressed past Review. Check manually to avoid downgrading its release status.')
+    old_status=(ROOT/STATUS).read_text(encoding='utf-8')
+    status=json.loads(old_status);changes=[]
+    stories,glob=registry.load(ROOT)
+    used={x.get('id') for _,s in stories for key in ('datasets','analyses','evidence','assets','posts','issues') for x in s.get(key,[])}
+    used.update(x.get('id') for x in glob.get('records',[]))
+    def newid(prefix):
         n=1
         while f'{prefix}-{n:03d}' in used:n+=1
-        rid=f'{prefix}-{n:03d}';used.add(rid);return rid
+        key=f'{prefix}-{n:03d}';used.add(key);return key
     assets=obj.setdefault('assets',[])
-    def add_asset(path,typ,name,version,description,review):
-        if any(a.get('path')==path for a in assets):return
-        rid=new_id('AS')
-        assets.append({'id':rid,'asset_type':typ,'version':version,'name':name,'path':path,
-                       'status':description,'owner':'GilB','updated_on':registry.today(),
-                       'quality_review':review,'notes':'Preserve this reference; do not overwrite prior versions.'})
-        changes.append(f'asset {rid}: {path}')
-    add_asset(MP4,'Creative benchmark video','Hearts of Oak — Claude RC1 owner-approved creative benchmark','RC1',
-        'Creative benchmark approved; NOT publication cleared',
-        'GilB approved as future quality baseline on 2026-11-08. Video 512x910, 30fps, 99.6s. Native 1080p and factual release checks pending.')
-    add_asset(STANDARD,'Production quality standard','GilB all-content quality checklist','v1.0',
-        'Approved standard for subsequent episodes',
-        'Covers evidence, visual accuracy, narration, audio, captions, technical export, source retention and publication.')
-    add_asset(QA,'Release QA tracker','GILB-001 outstanding final release checks','v1.0',
-        'Open — not signed off',
-        'Native 1080x1920 master, Claude project source, final evidence review, captions and audio/rights checks still open.')
-    add_asset(MANIFEST,'Archive manifest','GILB-001 archive provenance and file hashes','v1.0',
-        'Reference archive', 'Preserved source snapshots are not Claude editable source files.')
+    def asset(path,typ,name,version,description,review):
+        found=next((a for a in assets if a.get('path')==path),None)
+        if found:
+            for k,v in [('quality_review',review),('status',description)]:
+                if found.get(k)!=v:found[k]=v;changes.append(f'asset {found["id"]} updated {k}')
+        else:
+            rid=newid('AS')
+            assets.append({'id':rid,'asset_type':typ,'version':version,'name':name,'path':path,
+              'status':description,'owner':'GilB','updated_on':registry.today(),
+              'quality_review':review,'notes':'Preserve earlier versions; not a publishing approval.'})
+            changes.append(f'asset {rid} created')
+    asset(PREVIEW,'Creative benchmark review video','Hearts of Oak — compressed chat review copy','RC1',
+        'Creative benchmark approved; compressed chat reference, NOT source master',
+        'Owner confirms separate original full-resolution video exists. This 512x910 chat copy is not the original. No re-export required; release checks still open.')
+    asset(STANDARD,'Production quality standard','GilB quality checklist','v1.0','Approved reusable creative and QC standard',
+        'Applies to original export, not only reduced chat copy.')
+    asset(QA,'Release QA tracker','GILB-001 remaining publication sign-offs','v1.1','Open — release checks pending',
+        'Original export confirmed by owner; archive/inspect existing master, do not re-export. Data, audio/rights, captions remain pending.')
+    asset(MANIFEST,'Archive manifest','GILB-001 review-package integrity fingerprints','v1.1','Reference archive',
+        'Hashes supplied copy and included research only; original master is separate.')
+    asset(STATUS,'Owner master confirmation','Original-versus-compressed copy record','v1.1','Owner-confirmed original; independent metadata pending',
+        '2026-11-08: Original export correct resolution per owner. The smaller chat file is a compressed copy. No re-export required.')
     issues=obj.setdefault('issues',[])
-    def add_issue(marker,description,priority,next_action):
-        if any(marker in str(i.get('description','')) for i in issues):return
-        rid=new_id('ISS')
-        issues.append({'id':rid,'type':'Release blocker','description':marker+' — '+description,
-                       'priority':priority,'owner':'GilB','opened_on':registry.today(),
-                       'due':'','status':'Open','resolution':'','next_action':next_action})
-        changes.append(f'issue {rid}')
-    add_issue('BENCHMARK-RC1-EXPORT',
-      'Approved review file is 512x910; native 1080x1920 master is required before publication.',
-      'High','Export from Claude production project; verify native resolution. Do not upscale and label as native.')
-    add_issue('BENCHMARK-RC1-RELEASE-QA',
-      'Final match-data verification, audio/music rights, caption and mobile playback sign-off outstanding.',
-      'High','Use FINAL_RELEASE_QA.md and PRODUCTION_QUALITY_STANDARD_v1.md; explicitly approve every release claim.')
-    add_issue('BENCHMARK-RC1-SOURCE',
-      'Claude editable animation project not present in uploaded MP4 or reference source snapshots.',
-      'Medium','Add Claude code/project/assets to private versioned storage and link the canonical folder.')
-
-    if st.get('stage')!='Review':
-        st['stage']='Review';changes.append('stage Review')
-    decision='Creative benchmark approved 2026-11-08; final factual/technical publication sign-off pending'
-    if st.get('editorial_decision')!=decision:
-        st['editorial_decision']=decision;changes.append('editorial decision')
-    next_action='Obtain native full-resolution export and Claude source; complete evidence, audio/rights and caption QA; then approve release separately.'
-    if st.get('next_action')!=next_action:
-        st['next_action']=next_action;changes.append('next action')
-    # Preserve claim_confidence, blocker, evidence, publishing, source links and previously reviewed assets.
+    def issue(marker,desc,priority,action,typ='Release blocker'):
+        if any(marker in str(x.get('description','')) for x in issues):return
+        rid=newid('ISS');issues.append({'id':rid,'type':typ,'description':marker+' — '+desc,
+          'priority':priority,'owner':'GilB','opened_on':registry.today(),'due':'',
+          'status':'Open','resolution':'','next_action':action})
+        changes.append(f'issue {rid} created')
+    for i in issues:
+        if 'BENCHMARK-RC1-EXPORT' in str(i.get('description','')):
+            res='Closed on 2026-11-08: owner confirmed the original video is correct full resolution. 512x910 applies only to the compressed chat copy; no re-export needed. Master archive/metadata check tracked separately.'
+            for k,v in [('status','Closed'),('resolution',res),('next_action','')]:
+                if i.get(k)!=v:i[k]=v;changes.append(f'export issue {i["id"]} {k} corrected')
+    master_path=ROOT/MASTER
+    if master_path.is_file():
+        meta=get_video_metadata(master_path)
+        digest=sha(master_path)
+        masterdata=status['original_master']
+        masterdata.update({'archived_path':MASTER,'sha256':digest})
+        if meta:
+            masterdata['measured_width']=meta.get('width');masterdata['measured_height']=meta.get('height')
+            w,h=meta.get('width'),meta.get('height')
+            masterdata['technical_check']='Pass: metadata inspected' if w==1080 and h==1920 else f'Review original dimensions {w}x{h} against 1080x1920 target'
+        else:
+            masterdata['technical_check']='Original master SHA-256 recorded; video dimensions pending ffprobe check'
+        asset(MASTER,'Original master video','Hearts of Oak — owner original export','master v1',
+            'Original master archived; publishing not approved',
+            f'Original SHA-256 {digest}; {masterdata["technical_check"]}. Source resolution must be independently confirmed before release.')
+        for i in issues:
+            if 'BENCHMARK-RC1-MASTER-ARCHIVE' in str(i.get('description','')):
+                if meta and meta.get('width')==1080 and meta.get('height')==1920:
+                    if i.get('status')!='Closed':i['status']='Closed';changes.append('master archive issue closed')
+                    i['resolution']='Original video copied to repo; SHA-256 and 1080x1920 metadata confirmed.'
+                    i['next_action']=''
+                else:
+                    i['next_action']='Check original dimensions with ffprobe; SHA-256 has been recorded.'
+    else:
+        issue('BENCHMARK-RC1-MASTER-ARCHIVE',
+          'Preserve and inspect the existing high-resolution original video. No re-export necessary.',
+          'Medium','Copy the original master into benchmark_rc1/ or store externally and record its link/hash.','Archive follow-up')
+    issue('BENCHMARK-RC1-RELEASE-QA',
+      'Final match data sign-off, music rights, captions and mobile playback remain pending.',
+      'High','Complete FINAL_RELEASE_QA.md, then explicitly approve for publication.')
+    issue('BENCHMARK-RC1-SOURCE',
+      'Editable Claude project has not been provided for archive.',
+      'Medium','Archive Claude animation source files and dependencies.')
+    if st.get('stage')!='Review':st['stage']='Review';changes.append('stage corrected to Review')
+    decision='Creative benchmark approved 2026-11-08. Original high-resolution export confirmed by owner; chat copy reduced. Publication sign-off pending.'
+    if st.get('editorial_decision')!=decision:st['editorial_decision']=decision;changes.append('editorial decision corrected')
+    action='Archive and inspect existing original full-resolution master (no re-export); preserve Claude source; complete match-data, rights, captions and final release QA.'
+    if st.get('next_action')!=action:
+        st['next_action']=action;changes.append('next action corrected')
+    new_status=json.dumps(status,indent=2,ensure_ascii=False)+'\n'
+    if new_status!=old_status:changes.append('master status manifest updated')
     if not changes:
-        print('NO CHANGES: benchmark already registered; no duplicate event.')
+        print('NO CHANGES: already corrected; no duplicate events.')
         return
-    registry.dump(RECORD,obj)
+    registry.dump(REC,obj)
+    (ROOT/STATUS).write_text(new_status,encoding='utf-8')
     try:
-        problems=registry.validate(ROOT)
-        if problems:raise RuntimeError('; '.join(problems))
+        errs=registry.validate(ROOT)
+        if errs:raise RuntimeError('; '.join(errs))
         registry.build(ROOT)
     except Exception:
-        RECORD.write_text(original,encoding='utf-8')
+        REC.write_text(original_txt,encoding='utf-8')
+        (ROOT/STATUS).write_text(old_status,encoding='utf-8')
         try:registry.build(ROOT)
         except Exception:pass
         raise
-    registry.events(ROOT,'approve-creative-benchmark-rc1',SID,{
-        'owner_approved':'Creative quality benchmark, 2026-11-08',
-        'publication_clearance':'Not granted',
-        'video_sha256':actual,'changed':changes})
-    print('PASS: GILB-001 creative benchmark registered; stage Review; video NOT published.')
-    print(f'PASS: {len(changes)} changes; assets, checks and source files linked. See exports/index.html')
+    registry.events(ROOT,'correct-original-master-resolution',SID,{
+        'approved_creative_benchmark':'yes',
+        'owner_confirmed_original_master':'correct full-resolution export exists',
+        're_export_required':False,'publication_cleared':False,
+        'changed':changes})
+    print(f'PASS: GILB-001 benchmark corrected. {len(changes)} updates; story stays Review; video NOT published.')
+    print('PASS: No re-export required. Original file archiving and final release QA still tracked.')
 
 if __name__=='__main__':
     try:main()
-    except Exception as exc:
-        print('ERROR:',exc,file=sys.stderr)
-        sys.exit(1)
+    except Exception as e:
+        print('ERROR:',str(e),file=sys.stderr)
+        raise SystemExit(1)

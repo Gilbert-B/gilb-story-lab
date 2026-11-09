@@ -8,12 +8,12 @@
     "audience": "Football fans",
     "priority": "High",
     "stage": "Review",
-    "editorial_decision": "Creative benchmark approved 2026-11-08; final factual/technical publication sign-off pending",
+    "editorial_decision": "Creative benchmark approved 2026-11-08. Original high-resolution export confirmed by owner; chat copy reduced. Publication sign-off pending.",
     "claim_confidence": "Reproduced arithmetic; not approved",
     "added_on": "2026-11-07",
     "target_publish": "",
     "owner": "GilB",
-    "next_action": "Obtain native full-resolution export and Claude source; complete evidence, audio/rights and caption QA; then approve release separately.",
+    "next_action": "Archive and inspect existing original full-resolution master (no re-export); preserve Claude source; complete match-data, rights, captions and final release QA.",
     "blocker": "Owner has not approved factual claims for publication; match-results attribution required",
     "video_url": ""
   },
@@ -260,10 +260,10 @@
       "version": "RC1",
       "name": "Hearts of Oak — Claude RC1 owner-approved creative benchmark",
       "path": "stories/GILB-001/production/benchmark_rc1/GILB001_Hearts_of_Oak_Creative_Benchmark_RC1.mp4",
-      "status": "Creative benchmark approved; NOT publication cleared",
+      "status": "Creative benchmark approved; compressed chat reference, NOT source master",
       "owner": "GilB",
       "updated_on": "2026-11-09",
-      "quality_review": "GilB approved as future quality baseline on 2026-11-08. Video 512x910, 30fps, 99.6s. Native 1080p and factual release checks pending.",
+      "quality_review": "Owner confirms separate original full-resolution video exists. This 512x910 chat copy is not the original. No re-export required; release checks still open.",
       "notes": "Preserve this reference; do not overwrite prior versions."
     },
     {
@@ -272,10 +272,10 @@
       "version": "v1.0",
       "name": "GilB all-content quality checklist",
       "path": "docs/GilB_PRODUCTION_QUALITY_STANDARD_v1.md",
-      "status": "Approved standard for subsequent episodes",
+      "status": "Approved reusable creative and QC standard",
       "owner": "GilB",
       "updated_on": "2026-11-09",
-      "quality_review": "Covers evidence, visual accuracy, narration, audio, captions, technical export, source retention and publication.",
+      "quality_review": "Applies to original export, not only reduced chat copy.",
       "notes": "Preserve this reference; do not overwrite prior versions."
     },
     {
@@ -284,10 +284,10 @@
       "version": "v1.0",
       "name": "GILB-001 outstanding final release checks",
       "path": "stories/GILB-001/production/benchmark_rc1/FINAL_RELEASE_QA.md",
-      "status": "Open — not signed off",
+      "status": "Open — release checks pending",
       "owner": "GilB",
       "updated_on": "2026-11-09",
-      "quality_review": "Native 1080x1920 master, Claude project source, final evidence review, captions and audio/rights checks still open.",
+      "quality_review": "Original export confirmed by owner; archive/inspect existing master, do not re-export. Data, audio/rights, captions remain pending.",
       "notes": "Preserve this reference; do not overwrite prior versions."
     },
     {
@@ -299,8 +299,20 @@
       "status": "Reference archive",
       "owner": "GilB",
       "updated_on": "2026-11-09",
-      "quality_review": "Preserved source snapshots are not Claude editable source files.",
+      "quality_review": "Hashes supplied copy and included research only; original master is separate.",
       "notes": "Preserve this reference; do not overwrite prior versions."
+    },
+    {
+      "id": "AS-011",
+      "asset_type": "Owner master confirmation",
+      "version": "v1.1",
+      "name": "Original-versus-compressed copy record",
+      "path": "stories/GILB-001/production/benchmark_rc1/MASTER_STATUS.json",
+      "status": "Owner-confirmed original; independent metadata pending",
+      "owner": "GilB",
+      "updated_on": "2026-11-09",
+      "quality_review": "2026-11-08: Original export correct resolution per owner. The smaller chat file is a compressed copy. No re-export required.",
+      "notes": "Preserve earlier versions; not a publishing approval."
     }
   ],
   "posts": [],
@@ -325,9 +337,9 @@
       "owner": "GilB",
       "opened_on": "2026-11-09",
       "due": "",
-      "status": "Open",
-      "resolution": "",
-      "next_action": "Export from Claude production project; verify native resolution. Do not upscale and label as native."
+      "status": "Closed",
+      "resolution": "Closed on 2026-11-08: owner confirmed the original video is correct full resolution. 512x910 applies only to the compressed chat copy; no re-export needed. Master archive/metadata check tracked separately.",
+      "next_action": ""
     },
     {
       "id": "ISS-003",
@@ -352,6 +364,18 @@
       "status": "Open",
       "resolution": "",
       "next_action": "Add Claude code/project/assets to private versioned storage and link the canonical folder."
+    },
+    {
+      "id": "ISS-005",
+      "type": "Archive follow-up",
+      "description": "BENCHMARK-RC1-MASTER-ARCHIVE — Preserve and inspect the existing high-resolution original video. No re-export necessary.",
+      "priority": "Medium",
+      "owner": "GilB",
+      "opened_on": "2026-11-09",
+      "due": "",
+      "status": "Open",
+      "resolution": "",
+      "next_action": "Copy the original master into benchmark_rc1/ or store externally and record its link/hash."
     }
   ]
 }

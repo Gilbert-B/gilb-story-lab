@@ -1,0 +1,23 @@
+{
+  "story_id": "GILB-001",
+  "revision": "Benchmark metadata correction v1.1",
+  "confirmed_by": "GilB (owner)",
+  "confirmed_on": "2026-11-08",
+  "original_master": {
+    "exists_according_to_owner": true,
+    "reported_status": "Original high-resolution video has the correct export size; reduction occurred when sharing to ChatGPT",
+    "expected_dimensions": "1080x1920 portrait",
+    "archived_path": null,
+    "measured_width": null,
+    "measured_height": null,
+    "sha256": null,
+    "technical_check": "Pending access to original master file (no new render requested)"
+  },
+  "chat_review_copy": {
+    "path": "GILB001_Hearts_of_Oak_Creative_Benchmark_RC1.mp4",
+    "measured_dimensions": "512x910",
+    "purpose": "Compressed review/reference copy; not the technical-quality benchmark"
+  },
+  "re_export_required": false,
+  "publication_clearance": "Pending final data/rights/captions/technical sign-off"
+}
