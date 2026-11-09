@@ -1,0 +1,469 @@
+{
+ "source_files": {
+  "Market-Data-2023.pdf": {
+   "url": "https://nca.org.gh/wp-content/uploads/2025/06/Market-Data-2023.pdf",
+   "role": "context only",
+   "sha256": "00059f5bdbc78e844fb9dd7cf5e6a88dbbc341f2fe1dea8b5dc405b1ed53d7ce",
+   "bytes": 500972,
+   "pdf_created": "D:20250612132544+00'00'",
+   "labels": {
+    "mno/AT": "Airtel Ghana Limited (AirtelTigo)",
+    "mno/Telecel": "Telecel (Formerly Vodafone Ghana)",
+    "mno/MTN": "Scancom PLC Ghana Limited",
+    "mno/TOTAL": "TOTAL MOBILE",
+    "mno/TOTAL_MOM": "MONTH OVER MONTH GROWTH"
+   }
+  },
+  "Market-Data-2024.pdf": {
+   "url": "https://nca.org.gh/wp-content/uploads/2025/06/Market-Data-2024.pdf",
+   "role": "S1",
+   "sha256": "ce841e32ff051d57e94d257360056661e3ad1b64d2575d1c694d320037ec1aa5",
+   "bytes": 497369,
+   "pdf_created": "D:20250612133100+00'00'",
+   "labels": {
+    "mno/AT": "Airtel Ghana Limited (AirtelTigo)",
+    "mno/Telecel": "Telecel (Formerly Vodafone Ghana)",
+    "mno/MTN": "Scancom PLC Ghana Limited",
+    "mno/TOTAL": "TOTAL MOBILE",
+    "mno/TOTAL_MOM": "MONTH OVER MONTH GROWTH"
+   }
+  },
+  "Data-Subscription-December-2025.pdf": {
+   "url": "https://nca.org.gh/wp-content/uploads/2026/02/Data-Subscription-December-2025.pdf",
+   "role": "S2",
+   "sha256": "e41291aaafa45fb5bab09fa269a9265f459bd8bbdfe967fa7ee35d2201acba7f",
+   "bytes": 426709,
+   "pdf_created": "D:20260212113700+00'00'",
+   "labels": {
+    "mno/AT": "Airtel Ghana Limited (AT)",
+    "mno/Telecel": "Ghana Telecommunications Company Limited (Telecel)",
+    "mno/MTN": "Scancom PLC Ghana Limited (MTN Ghana)",
+    "mno/TOTAL": "TOTAL MOBILE",
+    "mno/TOTAL_MOM": "MONTH OVER MONTH GROWTH"
+   }
+  },
+  "Monthly-Industry-Data_July_2026-.pdf": {
+   "url": "https://nca.org.gh/wp-content/uploads/2026/10/Monthly-Industry-Data_July_2026-.pdf",
+   "role": "S3",
+   "sha256": "cc92911a3544960b3ed4d9d51eb2aa33b92074dfafb7f5f2b0b1d62e1e9f1c5c",
+   "bytes": 49314,
+   "pdf_created": "D:20261012115845+00'00'",
+   "labels": {
+    "mno/AT": "Airtel Ghana Limited (AT)",
+    "mno/Telecel": "Ghana Telecommunications Company Limited (Telecel)",
+    "mno/MTN": "Scancom PLC Ghana Limited (MTN Ghana)",
+    "mno/TOTAL": "TOTAL MOBILE",
+    "mno/TOTAL_MOM": "MONTH OVER MONTH GROWTH"
+   }
+  }
+ },
+ "operator_month_values_extracted_in_scope": 93,
+ "overlap_month_checks": [
+  [
+   "MATCH",
+   "2025-12",
+   "MTN",
+   22867689,
+   "Monthly-Industry-Data_July_2026-.pdf"
+  ],
+  [
+   "MATCH",
+   "2025-12",
+   "Telecel",
+   4528907,
+   "Monthly-Industry-Data_July_2026-.pdf"
+  ],
+  [
+   "MATCH",
+   "2025-12",
+   "AT",
+   1301794,
+   "Monthly-Industry-Data_July_2026-.pdf"
+  ]
+ ],
+ "total_rows_tested": 43,
+ "total_mismatches": [],
+ "total_in_scope_matches": "31",
+ "printed_share_tests": 132,
+ "printed_share_mismatches": [],
+ "printed_op_mom_tests": 129,
+ "printed_op_mom_mismatches": [
+  [
+   "Monthly-Industry-Data_July_2026-.pdf",
+   "2025-12",
+   "MTN",
+   2.3433,
+   2.48
+  ]
+ ],
+ "printed_total_mom_tests": 42,
+ "printed_total_mom_mismatches": [
+  [
+   "Monthly-Industry-Data_July_2026-.pdf",
+   "2025-12",
+   1.6731,
+   1.78
+  ]
+ ],
+ "second_engine_pdftotext_missing_tokens": [],
+ "compare_rows": {
+  "clean": 93,
+  "raw_operator_values": 93,
+  "ledger": 93
+ },
+ "compare_mismatches": {
+  "clean": [],
+  "raw": [],
+  "ledger": [],
+  "clean_share": [],
+  "clean_url": []
+ },
+ "duplicates_in_clean": 0,
+ "nulls_in_clean_counts": 0,
+ "three_month_pooled_shares": {
+  "Nov23-Jan24": {
+   "MTN": 80.76299845249895,
+   "Telecel": 13.257155048200625,
+   "AT": 5.979846499300426
+  },
+  "Jan-Mar24": {
+   "MTN": 80.81215127747744,
+   "Telecel": 13.129605807560948,
+   "AT": 6.05824291496161
+  },
+  "May-Jul26": {
+   "MTN": 80.0936231978692,
+   "Telecel": 15.916386813648678,
+   "AT": 3.9899899884821206
+  }
+ },
+ "share_turning_points_min_reversal_0.5pp": {
+  "MTN": [
+   [
+    "2024-01",
+    81.61
+   ],
+   [
+    "2025-06",
+    77.75
+   ],
+   [
+    "2025-12",
+    79.68
+   ],
+   [
+    "2026-01",
+    78.98
+   ],
+   [
+    "2026-07",
+    80.02
+   ]
+  ],
+  "Telecel": [
+   [
+    "2024-01",
+    13.18
+   ],
+   [
+    "2024-02",
+    13.41
+   ],
+   [
+    "2024-05",
+    12.56
+   ],
+   [
+    "2025-07",
+    16.4
+   ],
+   [
+    "2025-08",
+    15.41
+   ],
+   [
+    "2025-09",
+    16.12
+   ],
+   [
+    "2025-10",
+    15.46
+   ],
+   [
+    "2026-01",
+    16.18
+   ],
+   [
+    "2026-04",
+    15.48
+   ],
+   [
+    "2026-07",
+    16.1
+   ]
+  ],
+  "AT": [
+   [
+    "2024-01",
+    5.21
+   ],
+   [
+    "2024-05",
+    6.81
+   ],
+   [
+    "2026-07",
+    3.88
+   ]
+  ]
+ },
+ "extremes": {
+  "MTN": {
+   "min": [
+    "2025-06",
+    77.7505
+   ],
+   "max": [
+    "2024-01",
+    81.6148
+   ],
+   "count_peak": [
+    "2026-07",
+    24646152
+   ],
+   "count_low": [
+    "2024-02",
+    18760199
+   ]
+  },
+  "Telecel": {
+   "min": [
+    "2024-05",
+    12.5631
+   ],
+   "max": [
+    "2025-07",
+    16.403
+   ],
+   "count_peak": [
+    "2026-07",
+    4959805
+   ],
+   "count_low": [
+    "2024-01",
+    3063868
+   ]
+  },
+  "AT": {
+   "min": [
+    "2026-07",
+    3.8774
+   ],
+   "max": [
+    "2024-05",
+    6.8126
+   ],
+   "count_peak": [
+    "2024-05",
+    1691720
+   ],
+   "count_low": [
+    "2026-07",
+    1194237
+   ]
+  }
+ },
+ "mtn_share_jun_jul_2025": [
+  77.75053264055684,
+  77.7573231590398
+ ],
+ "monthly_share_move_abs_pp": {
+  "MTN": {
+   "median": 0.298,
+   "mean": 0.371,
+   "max": 1.268
+  },
+  "Telecel": {
+   "median": 0.303,
+   "mean": 0.34,
+   "max": 1.14
+  },
+  "AT": {
+   "median": 0.126,
+   "mean": 0.18,
+   "max": 1.041
+  }
+ },
+ "mtn_share_months_higher_than_jul26": 11,
+ "mtn_share_months_lower_than_jul26": 19,
+ "largest_mom_moves": {
+  "MTN": [
+   [
+    "2024-03",
+    841167,
+    4.48
+   ],
+   [
+    "2026-02",
+    763400,
+    3.42
+   ],
+   [
+    "2025-03",
+    638227,
+    3.12
+   ],
+   [
+    "2026-03",
+    715027,
+    3.09
+   ],
+   [
+    "2025-12",
+    523589,
+    2.34
+   ]
+  ],
+  "Telecel": [
+   [
+    "2025-06",
+    385538,
+    9.52
+   ],
+   [
+    "2025-09",
+    283016,
+    6.68
+   ],
+   [
+    "2025-08",
+    -279842,
+    -6.2
+   ],
+   [
+    "2024-09",
+    178832,
+    5.16
+   ],
+   [
+    "2024-08",
+    166019,
+    5.03
+   ]
+  ],
+  "AT": [
+   [
+    "2024-02",
+    248368,
+    20.52
+   ],
+   [
+    "2024-01",
+    -255272,
+    -17.42
+   ],
+   [
+    "2025-12",
+    -173037,
+    -11.73
+   ],
+   [
+    "2024-03",
+    171002,
+    11.72
+   ],
+   [
+    "2026-01",
+    66647,
+    5.12
+   ]
+  ]
+ },
+ "derived_file_mismatches": [],
+ "derived_files_tested": {
+  "panel_rows": 31,
+  "window_rows": 5,
+  "verified_metric_fields": 12
+ },
+ "workbook": {
+  "Executive Overview": {
+   "dims": "A1:G20",
+   "formulas": 8
+  },
+  "Monthly Timeline": {
+   "dims": "A1:Q37",
+   "formulas": 368
+  },
+  "Window Comparisons": {
+   "dims": "A1:N14",
+   "formulas": 55
+  },
+  "Finding Register": {
+   "dims": "A1:G15",
+   "formulas": 9
+  },
+  "Sources & Checks": {
+   "dims": "A1:F18",
+   "formulas": 0
+  }
+ },
+ "clean_csv_sha256_now": "aeb6b9a67de2afa754587e3a27ad33a5cb75b86db32ca671ccc2d3638c8f23d2",
+ "challenge": {
+  "telecel_end_if_grown_at_mtn_rate": 3979981.7771356287,
+  "mtn_end_share_if_telecel_grown_at_mtn_rate": 82.64871078966297,
+  "mtn_jan24_share_if_at_held_dec23_count": 80.72835750683537,
+  "mtn_share_months_up": 13,
+  "mtn_share_months_down": 17,
+  "months_mtn_share_above_jul26": [
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06"
+  ],
+  "recovery_jun25_jul26_pp": {
+   "MTN": 2.268937366677534,
+   "Telecel": -0.1728922467253753,
+   "AT": -2.0960451199521497
+  },
+  "telecel_may24_to_jul25_pp": 3.839841761869854,
+  "telecel_jun25_one_month_pp": 1.1398571088850105,
+  "start_months_tested_ending_jul26": 30,
+  "start_months_with_mtn_share_down_in_scope": [
+   "2024-01",
+   "2024-02",
+   "2024-03",
+   "2024-04",
+   "2024-05",
+   "2024-06",
+   "2024-07",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06"
+  ],
+  "contribution_range_all_starts_in_scope": [
+   69.3459085245604,
+   99.01239192793457
+  ],
+  "nov25_mtn_implied_by_2026_pdf_dec25_growth": [
+   22313205.835000243,
+   22315383.264210783
+  ],
+  "nov25_total_implied_by_2026_pdf_dec25_growth": [
+   28195107.334086556,
+   28197877.671333827
+  ],
+  "nov25_published": [
+   22344100,
+   28226134
+  ],
+  "mom_mixed_sign_months_total": 7
+ }
+}

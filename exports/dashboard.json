@@ -1,11 +1,12 @@
 {
   "stories": 6,
   "published_stories": 0,
-  "datasets_acquired": 1,
+  "datasets_acquired": 2,
   "verified_approved_claims": 0,
-  "open_issues": 4,
+  "open_issues": 7,
   "stages": {
-    "Idea": 5,
+    "Analysis": 1,
+    "Idea": 4,
     "Review": 1
   }
 }
