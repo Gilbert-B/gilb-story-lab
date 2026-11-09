@@ -1,0 +1,267 @@
+{
+  "story_id": "GILB-002",
+  "as_of": "2026-11-08",
+  "dataset_period": [
+    "2024-01-01",
+    "2026-07-01"
+  ],
+  "n_months": 31,
+  "n_operator_months": 93,
+  "monthly_reconciliation_passed": 31,
+  "operator_names": [
+    "MTN",
+    "Telecel",
+    "AT"
+  ],
+  "windows": [
+    {
+      "start": "2024-01-01",
+      "end": "2024-12-01",
+      "months_between": 11,
+      "total_start": 23247115,
+      "total_end": 26127592,
+      "net_change": 2880477,
+      "growth_pct": 12.390685898013576,
+      "operators": {
+        "MTN": {
+          "count_start": 18973091,
+          "count_end": 20626311,
+          "net_change": 1653220,
+          "count_growth_pct": 8.713498501641093,
+          "share_start_pct": 81.61481973139463,
+          "share_end_pct": 78.9445540943842,
+          "share_change_pp": -2.670265637010427,
+          "contribution_to_net_growth_pct": 57.39396634654607
+        },
+        "Telecel": {
+          "count_start": 3063868,
+          "count_end": 3892046,
+          "net_change": 828178,
+          "count_growth_pct": 27.030472592161292,
+          "share_start_pct": 13.179562281169083,
+          "share_end_pct": 14.896305790445593,
+          "share_change_pp": 1.7167435092765109,
+          "contribution_to_net_growth_pct": 28.751418601849625
+        },
+        "AT": {
+          "count_start": 1210156,
+          "count_end": 1609235,
+          "net_change": 399079,
+          "count_growth_pct": 32.97748389463837,
+          "share_start_pct": 5.20561798743629,
+          "share_end_pct": 6.1591401151702,
+          "share_change_pp": 0.95352212773391,
+          "contribution_to_net_growth_pct": 13.8546150516043
+        }
+      }
+    },
+    {
+      "start": "2024-12-01",
+      "end": "2025-12-01",
+      "months_between": 12,
+      "total_start": 26127592,
+      "total_end": 28698390,
+      "net_change": 2570798,
+      "growth_pct": 9.839398900595198,
+      "operators": {
+        "MTN": {
+          "count_start": 20626311,
+          "count_end": 22867689,
+          "net_change": 2241378,
+          "count_growth_pct": 10.866596552335505,
+          "share_start_pct": 78.9445540943842,
+          "share_end_pct": 79.6828288973702,
+          "share_change_pp": 0.7382748029860053,
+          "contribution_to_net_growth_pct": 87.18607996427568
+        },
+        "Telecel": {
+          "count_start": 3892046,
+          "count_end": 4528907,
+          "net_change": 636861,
+          "count_growth_pct": 16.363141648377223,
+          "share_start_pct": 14.896305790445593,
+          "share_end_pct": 15.781049041427062,
+          "share_change_pp": 0.8847432509814679,
+          "contribution_to_net_growth_pct": 24.772891530178565
+        },
+        "AT": {
+          "count_start": 1609235,
+          "count_end": 1301794,
+          "net_change": -307441,
+          "count_growth_pct": -19.104792028510442,
+          "share_start_pct": 6.1591401151702,
+          "share_end_pct": 4.536122061202737,
+          "share_change_pp": -1.6230180539674635,
+          "contribution_to_net_growth_pct": -11.958971494454252
+        }
+      }
+    },
+    {
+      "start": "2025-12-01",
+      "end": "2026-07-01",
+      "months_between": 7,
+      "total_start": 28698390,
+      "total_end": 30800194,
+      "net_change": 2101804,
+      "growth_pct": 7.323769730636465,
+      "operators": {
+        "MTN": {
+          "count_start": 22867689,
+          "count_end": 24646152,
+          "net_change": 1778463,
+          "count_growth_pct": 7.777187279396713,
+          "share_start_pct": 79.6828288973702,
+          "share_end_pct": 80.01947000723437,
+          "share_change_pp": 0.3366411098641664,
+          "contribution_to_net_growth_pct": 84.61602509082674
+        },
+        "Telecel": {
+          "count_start": 4528907,
+          "count_end": 4959805,
+          "net_change": 430898,
+          "count_growth_pct": 9.514392766289959,
+          "share_start_pct": 15.781049041427062,
+          "share_end_pct": 16.10316155800837,
+          "share_change_pp": 0.3221125165813077,
+          "contribution_to_net_growth_pct": 20.50134075299124
+        },
+        "AT": {
+          "count_start": 1301794,
+          "count_end": 1194237,
+          "net_change": -107557,
+          "count_growth_pct": -8.262213529944063,
+          "share_start_pct": 4.536122061202737,
+          "share_end_pct": 3.877368434757262,
+          "share_change_pp": -0.6587536264454747,
+          "contribution_to_net_growth_pct": -5.117365843817978
+        }
+      }
+    },
+    {
+      "start": "2024-01-01",
+      "end": "2026-07-01",
+      "months_between": 30,
+      "total_start": 23247115,
+      "total_end": 30800194,
+      "net_change": 7553079,
+      "growth_pct": 32.490392893913935,
+      "operators": {
+        "MTN": {
+          "count_start": 18973091,
+          "count_end": 24646152,
+          "net_change": 5673061,
+          "count_growth_pct": 29.90056285504561,
+          "share_start_pct": 81.61481973139463,
+          "share_end_pct": 80.01947000723437,
+          "share_change_pp": -1.5953497241602554,
+          "contribution_to_net_growth_pct": 75.1092501481846
+        },
+        "Telecel": {
+          "count_start": 3063868,
+          "count_end": 4959805,
+          "net_change": 1895937,
+          "count_growth_pct": 61.88050529592006,
+          "share_start_pct": 13.179562281169083,
+          "share_end_pct": 16.10316155800837,
+          "share_change_pp": 2.9235992768392864,
+          "contribution_to_net_growth_pct": 25.10151158223024
+        },
+        "AT": {
+          "count_start": 1210156,
+          "count_end": 1194237,
+          "net_change": -15919,
+          "count_growth_pct": -1.3154502394732592,
+          "share_start_pct": 5.20561798743629,
+          "share_end_pct": 3.877368434757262,
+          "share_change_pp": -1.3282495526790283,
+          "contribution_to_net_growth_pct": -0.21076173041484142
+        }
+      }
+    },
+    {
+      "start": "2025-07-01",
+      "end": "2026-07-01",
+      "months_between": 12,
+      "total_start": 27522173,
+      "total_end": 30800194,
+      "net_change": 3278021,
+      "growth_pct": 11.910473057487136,
+      "operators": {
+        "MTN": {
+          "count_start": 21400505,
+          "count_end": 24646152,
+          "net_change": 3245647,
+          "count_growth_pct": 15.166216871985029,
+          "share_start_pct": 77.7573231590398,
+          "share_end_pct": 80.01947000723437,
+          "share_change_pp": 2.2621468481945683,
+          "contribution_to_net_growth_pct": 99.01239192793457
+        },
+        "Telecel": {
+          "count_start": 4514459,
+          "count_end": 4959805,
+          "net_change": 445346,
+          "count_growth_pct": 9.864880819606503,
+          "share_start_pct": 16.402988964570493,
+          "share_end_pct": 16.10316155800837,
+          "share_change_pp": -0.29982740656212536,
+          "contribution_to_net_growth_pct": 13.585819004820287
+        },
+        "AT": {
+          "count_start": 1607209,
+          "count_end": 1194237,
+          "net_change": -412972,
+          "count_growth_pct": -25.69497806445833,
+          "share_start_pct": 5.839687876389702,
+          "share_end_pct": 3.877368434757262,
+          "share_change_pp": -1.9623194416324403,
+          "contribution_to_net_growth_pct": -12.598210932754855
+        }
+      }
+    }
+  ],
+  "monthly_share_extrema": {
+    "MTN": {
+      "min": [
+        "2025-06-01",
+        77.75053264055684
+      ],
+      "max": [
+        "2024-01-01",
+        81.61481973139463
+      ]
+    },
+    "Telecel": {
+      "min": [
+        "2024-05-01",
+        12.56314720270064
+      ],
+      "max": [
+        "2025-07-01",
+        16.402988964570493
+      ]
+    },
+    "AT": {
+      "min": [
+        "2026-07-01",
+        3.877368434757262
+      ],
+      "max": [
+        "2024-05-01",
+        6.812645170206996
+      ]
+    }
+  },
+  "hhi": {
+    "2024-01-01": 6861.78,
+    "2024-12-01": 6492.08,
+    "2025-12-01": 6618.97,
+    "2026-07-01": 6677.46
+  },
+  "claim_status": "Analysis completed / not approved for publication",
+  "sources": [
+    "https://nca.org.gh/wp-content/uploads/2025/06/Market-Data-2024.pdf",
+    "https://nca.org.gh/wp-content/uploads/2026/02/Data-Subscription-December-2025.pdf",
+    "https://nca.org.gh/wp-content/uploads/2026/10/Monthly-Industry-Data_July_2026-.pdf"
+  ]
+}

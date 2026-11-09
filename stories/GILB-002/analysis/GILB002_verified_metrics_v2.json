@@ -1,0 +1,24 @@
+{
+  "start": "2024-01",
+  "end": "2026-07",
+  "n_months": 31,
+  "operator_month_rows": 93,
+  "source_matches": 93,
+  "source_mismatches": 0,
+  "total_start": 23247115,
+  "total_end": 30800194,
+  "total_growth_abs": 7553079,
+  "total_growth_pct": 32.490392893913935,
+  "mtn_gain": 5673061,
+  "mtn_start_share": 81.61481973139463,
+  "mtn_end_share": 80.01947000723437,
+  "mtn_share_pp": -1.5953497241602554,
+  "telecel_gain": 1895937,
+  "telecel_growth_pct": 61.88050529592006,
+  "at_change": -15919,
+  "at_growth_pct": -1.3154502394732592,
+  "mtn_trough": [
+    "2025-06",
+    0.7775053264055685
+  ]
+}
