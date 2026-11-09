@@ -1,0 +1,6 @@
+period,measure,q1_bulletin_or_other,later_monthly_or_other,difference,decision,source_notes
+Mar 2026,MTN exact subscriptions,23818235,23818235,0,Can use,Q1 2026 Bulletin Table 15 vs July 2026 monthly table
+Mar 2026,Telecel exact subscriptions,4617656,4617656,0,Can use,Q1 2026 Bulletin Table 15 vs July 2026 monthly table
+Mar 2026,AT exact subscriptions,1291580,1291576,4,Exclude exact count,Q1 2026 Bulletin Table 15 vs July 2026 monthly table
+Mar 2026,Total exact subscriptions,29727471,29727467,4,Exclude exact total,Q1 2026 Bulletin Table 15 vs July 2026 monthly table
+Dec 2025,MTN exact subscriptions (published conflict),22867689,25292341,-2424652,Exclude affected historical trend from video,Dec 2025 source & Q1 Bulletin vs Feb 2026 report

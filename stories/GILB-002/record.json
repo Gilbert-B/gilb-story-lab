@@ -3,18 +3,18 @@
     "id": "GILB-002",
     "title": "Who controls Ghana's mobile internet subscriptions?",
     "pillar": "Technology & changing Ghana",
-    "angle": "Market comparison",
+    "angle": "Working candidate: Q1 2026 mobile data subscription share vs traffic share; historical paradox excluded",
     "visual_format": "The Unexpected Winner",
     "audience": "General Ghanaian audience",
     "priority": "High",
     "stage": "Analysis",
-    "editorial_decision": "Analysis findings prepared — no story angle or narration approved",
-    "claim_confidence": "All 93 source values and 31 monthly MNO totals checked against NCA; human claim sign-off pending",
+    "editorial_decision": "Original historical market-share paradox excluded; new Q1 cross-metric comparison pending review",
+    "claim_confidence": "Q1 shares crosschecked and traffic reconciled within NCA Bulletin; user-level and causal claims not supported; publication not approved",
     "added_on": "2026-11-07",
     "target_publish": "",
     "owner": "GilB",
-    "next_action": "Review v2 analysis verification report, archive original NCA PDFs, approve story angle/claim wording; do not publish yet",
-    "blocker": "NCA raw PDFs not yet archived; independent transcription and editorial verification pending",
+    "next_action": "Review v3 clean-evidence report; if editorial angle is accepted, draft narration using Q1 shares only. No NCA contact required.",
+    "blocker": "Exclude disputed December 2025 reporting series and exact March 2026 AT/total counts from public story; preserve audit trail.",
     "video_url": ""
   },
   "datasets": [
@@ -31,7 +31,23 @@
       "raw_file": "stories/GILB-002/data/raw/GILB002_mno_source_transcription_2024_2026-07.csv",
       "clean_file": "stories/GILB-002/data/clean/GILB002_mobile_internet_operator_monthly_2024_2026-07.csv",
       "reuse_license": "Check NCA data reuse terms before republication of full source tables",
-      "quality_next_check": "93/93 source values and 31/31 official totals reconciled to NCA PDFs (2026-11-08); archive NCA PDF originals and obtain external claim sign-off",
+      "quality_next_check": "Historical source series retained for audit ONLY; conflicting releases excluded from present video. See GILB002 v3 decision report.",
+      "owner": "GilB"
+    },
+    {
+      "id": "DATA-010",
+      "publisher": "National Communications Authority",
+      "name": "Q1 2026 reconciled operator subscription and traffic percentage shares (restricted story table)",
+      "source_url": "https://nca.org.gh/wp-content/uploads/2026/06/Q1_2026_Statistical_Bulletin.pdf",
+      "reference_period": "End-March subscription snapshot and Jan–Mar 2026 traffic totals",
+      "granularity": "operator-quarter; shares of two separate measures",
+      "classification": "Official Q1 2026 NCA Bulletin Tables 15 & 18; printed shares confirmed across 2 releases",
+      "acquisition_status": "Source transcribed; original official PDF accessible by URL (not bundled)",
+      "acquired_on": "2026-11-09",
+      "raw_file": "",
+      "clean_file": "stories/GILB-002/analysis/clean_scope_v3/GILB002_Q1_2026_Crosschecked_Shares_v3.csv",
+      "reuse_license": "Check NCA reuse rights before republishing source tables or original PDF",
+      "quality_next_check": "Original report source reviewed; AT exact count differs by 4 from July release. All new video claims need owner final sign-off.",
       "owner": "GilB"
     }
   ],
@@ -43,12 +59,26 @@
       "approach": "Monthly shares, relative count growth, share percentage-point changes, net-growth contribution, alternative date windows, and anomalies",
       "finding": "MTN added 5,673,061 subscriptions Jan 2024–Jul 2026 while share fell 81.61% to 80.02%; Telecel share gained 2.92pp; AT lost 1.33pp.",
       "run_date": "2026-11-08",
-      "status": "Full 93-row NCA source-table audit passed; human peer review and publication approval pending",
+      "status": "Historical analysis retained; headline excluded from active GILB-002 editorial scope (NCA conflicting releases)",
       "output_file": "stories/GILB-002/analysis/GILB002_Analysis_and_Verification_Report_v2.md",
       "peer_check": "93/93 values and 31/31 mobile totals matched NCA primary PDF tables (AI-assisted verification; external human sign-off pending)",
       "supporting_evidence_id": "EV-003",
       "repro_notes": "Read v2 report; replay tools/verify_gilb002_nca_v2.py; inspect 93-row source comparison ledger; preserve original NCA PDFs",
-      "limitations": "Counts are subscriptions, not people; market share changes over time are not necessarily monotonic; monthly shifts have no verified causal explanation; NCA PDF binaries still need archiving."
+      "limitations": "Historical time-series comparison is not selected for public story because of cross-publication conflicts; original analysis files retained for audit."
+    },
+    {
+      "id": "AN-005",
+      "input_dataset_ids": "DATA-010",
+      "question": "GILB002-SAFE-SCOPE-Q1-2026 — Compare Q1 2026 subscription shares with traffic shares",
+      "approach": "Read NCA Q1 2026 Tables 15/18, reconcile traffic TB and compute traffic share minus end-quarter subscription share; exclude conflicting cross-report values.",
+      "finding": "MTN: 80.12% share of March-end MNO mobile data subscriptions vs 87.31% of Jan–Mar 2026 data traffic, +7.19 percentage points.",
+      "run_date": "2026-11-09",
+      "status": "Clean source-scope comparison prepared; editorial approval and final factual sign-off pending",
+      "output_file": "stories/GILB-002/analysis/clean_scope_v3/GILB002_Clean_Evidence_Scope_And_Verification_v3.md",
+      "peer_check": "Q1 shares and MTN/Telecel March counts agree with July monthly release; traffic arithmetic checks pass in Q1 bulletin.",
+      "supporting_evidence_id": "EV-009",
+      "repro_notes": "Read the Word methodology report, CSV and run the v3 Python reproduction script.",
+      "limitations": "Q1 traffic is aggregate volume while subscription share is March-end stock. AT exact March counts differ by 4 across sources; no causal or customer-level inference."
     }
   ],
   "evidence": [
@@ -58,11 +88,11 @@
       "source_dataset_id": "DATA-002",
       "source_url": "https://nca.org.gh/wp-content/uploads/2026/10/Monthly-Industry-Data_July_2026-.pdf",
       "proof_file": "stories/GILB-002/analysis/GILB002_Analysis_and_Verification_Report_v2.md",
-      "verification_status": "Source counts verified (AI-assisted 93-row NCA audit); human publication approval pending",
+      "verification_status": "Historical research only — excluded from GILB-002 active public-story scope",
       "checked_by": "",
       "checked_on": "",
       "safe_to_publish": "No",
-      "qualification": "80.02% of active MNO mobile internet subscriptions in July 2026; not people, revenues, traffic, or all internet subscriptions"
+      "qualification": "Kept as background/audit only. Do not use this claim in GILB-002 public script without new editorial verification."
     },
     {
       "id": "EV-006",
@@ -70,13 +100,13 @@
       "source_dataset_id": "DATA-002",
       "source_url": "https://nca.org.gh/mobile-data/",
       "proof_file": "stories/GILB-002/analysis/GILB002_findings_v1.md",
-      "verification_status": "Research calculation; independent check pending",
+      "verification_status": "Historical research only — excluded from GILB-002 active public-story scope",
       "checked_by": "",
       "checked_on": "",
       "safe_to_publish": "No",
       "approved_by": "",
       "approval_date": "",
-      "qualification": "End-to-end comparison only; MTN share rebounded from mid-2025 low."
+      "qualification": "Kept as background/audit only. Do not use this claim in GILB-002 public script without new editorial verification."
     },
     {
       "id": "EV-007",
@@ -84,13 +114,13 @@
       "source_dataset_id": "DATA-002",
       "source_url": "https://nca.org.gh/mobile-data/",
       "proof_file": "stories/GILB-002/analysis/GILB002_findings_v1.md",
-      "verification_status": "Research calculation; independent check pending",
+      "verification_status": "Historical research only — excluded from GILB-002 active public-story scope",
       "checked_by": "",
       "checked_on": "",
       "safe_to_publish": "No",
       "approved_by": "",
       "approval_date": "",
-      "qualification": "Net active subscriptions, not newly acquired people or unique customers."
+      "qualification": "Kept as background/audit only. Do not use this claim in GILB-002 public script without new editorial verification."
     },
     {
       "id": "EV-008",
@@ -98,13 +128,27 @@
       "source_dataset_id": "DATA-002",
       "source_url": "https://nca.org.gh/mobile-data/",
       "proof_file": "stories/GILB-002/analysis/GILB002_findings_v1.md",
-      "verification_status": "Research calculation; independent check pending",
+      "verification_status": "Historical research only — excluded from GILB-002 active public-story scope",
       "checked_by": "",
       "checked_on": "",
       "safe_to_publish": "No",
       "approved_by": "",
       "approval_date": "",
-      "qualification": "Denominator is net stock change; operator negative change means contributions can exceed 100% before offsets."
+      "qualification": "Kept as background/audit only. Do not use this claim in GILB-002 public script without new editorial verification."
+    },
+    {
+      "id": "EV-009",
+      "claim": "GILB002-CROSS-METRIC-GAP-Q1-2026 — MTN 80.12% of mobile data subscriptions at end-March versus 87.31% of Q1 mobile traffic",
+      "source_dataset_id": "DATA-010",
+      "source_url": "https://nca.org.gh/wp-content/uploads/2026/06/Q1_2026_Statistical_Bulletin.pdf",
+      "proof_file": "stories/GILB-002/analysis/clean_scope_v3/GILB002_Clean_Evidence_Scope_And_Verification_v3.md",
+      "verification_status": "Official-source table and arithmetic cross-check; human editorial approval pending",
+      "checked_by": "AI-assisted source comparison",
+      "checked_on": "2026-11-09",
+      "safe_to_publish": "No",
+      "approved_by": "",
+      "approval_date": "",
+      "qualification": "Two measures over different temporal windows; not per-customer usage. Exclude AT exact counts and disputed historical comparisons."
     }
   ],
   "assets": [
@@ -215,6 +259,66 @@
       "updated_on": "2026-11-08",
       "quality_review": "93 source counts and 31 monthly totals passed; human claim sign-off pending",
       "notes": "Do not approve script, video or publishing automatically; originals of NCA PDFs not archived."
+    },
+    {
+      "id": "AS-022",
+      "asset_type": "Analysis verification report",
+      "version": "v3.0",
+      "name": "GILB-002 clean-evidence editorial scope and verification report v3",
+      "path": "stories/GILB-002/analysis/clean_scope_v3/GILB002_Clean_Evidence_Scope_And_Verification_v3.docx",
+      "status": "Prepared for editorial review — not publication-approved",
+      "owner": "GilB",
+      "updated_on": "2026-11-09",
+      "quality_review": "Published source table and arithmetic checks complete; owner sign-off outstanding",
+      "notes": "Historical discrepancies are excluded from GILB-002 active script, not erased from the research history."
+    },
+    {
+      "id": "AS-023",
+      "asset_type": "Analysis documentation",
+      "version": "v3.0",
+      "name": "GILB-002 clean-evidence scope markdown v3",
+      "path": "stories/GILB-002/analysis/clean_scope_v3/GILB002_Clean_Evidence_Scope_And_Verification_v3.md",
+      "status": "Prepared for editorial review — not publication-approved",
+      "owner": "GilB",
+      "updated_on": "2026-11-09",
+      "quality_review": "Published source table and arithmetic checks complete; owner sign-off outstanding",
+      "notes": "Historical discrepancies are excluded from GILB-002 active script, not erased from the research history."
+    },
+    {
+      "id": "AS-024",
+      "asset_type": "Verified source excerpt",
+      "version": "v3.0",
+      "name": "NCA Q1 cross-checked source shares v3",
+      "path": "stories/GILB-002/analysis/clean_scope_v3/GILB002_Q1_2026_Crosschecked_Shares_v3.csv",
+      "status": "Prepared for editorial review — not publication-approved",
+      "owner": "GilB",
+      "updated_on": "2026-11-09",
+      "quality_review": "Published source table and arithmetic checks complete; owner sign-off outstanding",
+      "notes": "Historical discrepancies are excluded from GILB-002 active script, not erased from the research history."
+    },
+    {
+      "id": "AS-025",
+      "asset_type": "Evidence exclusions",
+      "version": "v3.0",
+      "name": "Cross-publication source conflicts excluded v3",
+      "path": "stories/GILB-002/analysis/clean_scope_v3/GILB002_Source_Exceptions_v3.csv",
+      "status": "Prepared for editorial review — not publication-approved",
+      "owner": "GilB",
+      "updated_on": "2026-11-09",
+      "quality_review": "Published source table and arithmetic checks complete; owner sign-off outstanding",
+      "notes": "Historical discrepancies are excluded from GILB-002 active script, not erased from the research history."
+    },
+    {
+      "id": "AS-026",
+      "asset_type": "Reproducibility script",
+      "version": "v3.0",
+      "name": "Reproduce Q1 share comparison v3",
+      "path": "stories/GILB-002/analysis/clean_scope_v3/reproduce_gilb002_clean_scope_v3.py",
+      "status": "Prepared for editorial review — not publication-approved",
+      "owner": "GilB",
+      "updated_on": "2026-11-09",
+      "quality_review": "Published source table and arithmetic checks complete; owner sign-off outstanding",
+      "notes": "Historical discrepancies are excluded from GILB-002 active script, not erased from the research history."
     }
   ],
   "posts": [],
@@ -266,6 +370,18 @@
       "status": "Open",
       "resolution": "",
       "next_action": "External or owner review of v2 verification report, exact claims, period and visual scale before publication."
+    },
+    {
+      "id": "ISS-010",
+      "type": "Decision",
+      "description": "GILB002-EXCLUDE-DISPUTED-SERIES-V3 — Exclude disputed NCA historical comparisons and exact March 2026 AT/total values from active public story.",
+      "priority": "High",
+      "owner": "GilB",
+      "opened_on": "2026-11-09",
+      "due": "",
+      "status": "Closed",
+      "resolution": "Owner chose no NCA outreach; problematic numbers retained in audit archive but prohibited in current GILB-002 narration.",
+      "next_action": "Focus on source-consistent Q1 subscription and traffic shares; preserve original datasets."
     }
   ]
 }
