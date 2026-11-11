@@ -7,15 +7,19 @@
     "visual_format": "The Unexpected Winner",
     "audience": "General Ghanaian audience",
     "priority": "High",
-    "stage": "Analysis",
-    "editorial_decision": "Original historical market-share paradox excluded; new Q1 cross-metric comparison pending review",
+    "stage": "Review",
+    "editorial_decision": "Final GILB-002 cut approved by owner on 2026-11-10. Production complete; not publication approval.",
     "claim_confidence": "Q1 shares crosschecked and traffic reconciled within NCA Bulletin; user-level and causal claims not supported; publication not approved",
     "added_on": "2026-11-07",
     "target_publish": "",
     "owner": "GilB",
-    "next_action": "Review v3 clean-evidence report; if editorial angle is accepted, draft narration using Q1 shares only. No NCA contact required.",
-    "blocker": "Exclude disputed December 2025 reporting series and exact March 2026 AT/total counts from public story; preserve audit trail.",
-    "video_url": ""
+    "next_action": "Production complete. Finish final factual/rights/platform checks and archive editable sources; schedule as part of three-video launch.",
+    "blocker": "No production blocker. Public release requires separate factual, rights and platform sign-off.",
+    "video_url": "",
+    "production_status": "Completed — owner approved",
+    "production_completed_on": "2026-11-10",
+    "final_master_file": "stories/GILB-002/production/final/GILB002_v4_Score_B_Cinematic_Pulse_v2_Lower_Bed.mp4",
+    "final_master_sha256": "e1531ea10e55dd79145855b5fd337935480903b743e593aad608e1a4891bd4ec"
   },
   "datasets": [
     {
@@ -319,6 +323,54 @@
       "updated_on": "2026-11-09",
       "quality_review": "Published source table and arithmetic checks complete; owner sign-off outstanding",
       "notes": "Historical discrepancies are excluded from GILB-002 active script, not erased from the research history."
+    },
+    {
+      "id": "AS-027",
+      "asset_type": "Final video",
+      "version": "Final / score B v2",
+      "name": "GILB-002 — Approved final master (Score B, Cinematic Pulse v2 Lower Bed)",
+      "path": "stories/GILB-002/production/final/GILB002_v4_Score_B_Cinematic_Pulse_v2_Lower_Bed.mp4",
+      "status": "Completed — owner approved",
+      "owner": "GilB",
+      "updated_on": "2026-11-10",
+      "quality_review": "Owner creative approval recorded. Publication evidence and rights approval not granted here.",
+      "notes": "Owner-approved original: H.264 1080x1920 24 fps; AAC stereo 48 kHz; duration 121.54 seconds; SHA-256 e1531ea10e55dd79145855b5fd337935480903b743e593aad608e1a4891bd4ec. Keep as immutable original; factual/rights release checks pending."
+    },
+    {
+      "id": "AS-028",
+      "asset_type": "Production milestone",
+      "version": "Closeout v1.0",
+      "name": "GILB-002 — Production Completion Record",
+      "path": "stories/GILB-002/production/final/PRODUCTION_COMPLETION_RECORD.md",
+      "status": "Completed — owner approved",
+      "owner": "GilB",
+      "updated_on": "2026-11-10",
+      "quality_review": "Owner creative approval recorded. Publication evidence and rights approval not granted here.",
+      "notes": "GILB002-PRODUCTION-COMPLETED-2026-11-10; production finished, not published."
+    },
+    {
+      "id": "AS-029",
+      "asset_type": "Release QA checklist",
+      "version": "Release gate v1.0",
+      "name": "GILB-002 — Remaining release checks",
+      "path": "stories/GILB-002/production/final/RELEASE_QA_CHECKLIST.md",
+      "status": "Pending publication checks",
+      "owner": "GilB",
+      "updated_on": "2026-11-10",
+      "quality_review": "Owner creative approval recorded. Publication evidence and rights approval not granted here.",
+      "notes": "Production complete; release checks remain open."
+    },
+    {
+      "id": "AS-030",
+      "asset_type": "Master verification",
+      "version": "v1.0",
+      "name": "GILB-002 — Final master SHA-256",
+      "path": "stories/GILB-002/production/final/GILB002_FINAL_VIDEO_SHA256.txt",
+      "status": "Recorded",
+      "owner": "GilB",
+      "updated_on": "2026-11-10",
+      "quality_review": "Owner creative approval recorded. Publication evidence and rights approval not granted here.",
+      "notes": "SHA-256 of the exact user-selected final MP4."
     }
   ],
   "posts": [],

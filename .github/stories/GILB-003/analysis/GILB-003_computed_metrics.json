@@ -1,0 +1,36 @@
+{
+  "source_pdf": "https://www.bog.gov.gh/wp-content/uploads/2026/09/Summary-of-Economic-and-Financial-Data-September-2026.pdf",
+  "source_table": "Printed page 13, Table 11, Mobile Money (MM) Data, official published rounded values",
+  "observations": 13,
+  "aug_2025": {
+    "registered_millions": 77.7,
+    "active_millions": 25.1,
+    "not_active_millions": 52.6,
+    "active_percent": 32.3037,
+    "not_active_percent": 67.6963
+  },
+  "aug_2026": {
+    "registered_millions": 85.8,
+    "active_millions": 26.4,
+    "not_active_millions": 59.4,
+    "active_percent": 30.7692,
+    "not_active_percent": 69.2308
+  },
+  "change_2025_08_to_2026_08": {
+    "registered_accounts_millions": 8.1,
+    "active_accounts_millions": 1.3,
+    "not_active_accounts_millions": 6.8,
+    "active_share_percentage_points": -1.5345,
+    "registered_percent_growth": 10.4247,
+    "active_percent_growth": 5.1793
+  },
+  "aug_2026_transactions_millions": 1046.0,
+  "aug_2026_transaction_value_billion_GHS": 518.8,
+  "limitations": [
+    "90-day rolling active definition; not monthly unique people",
+    "Accounts are not individuals",
+    "One BoG release, not multiple-release reconciliation",
+    "Values are rounded in millions and billions",
+    "Data subject to revision"
+  ]
+}

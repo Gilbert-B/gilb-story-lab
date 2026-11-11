@@ -1,20 +1,20 @@
 {
   "story": {
     "id": "GILB-003",
-    "title": "How different are Ghana's districts?",
+    "title": "Ghana's Sleeping Wallets",
     "pillar": "Ghana by region & district",
     "angle": "District comparison",
     "visual_format": "The Hidden Gap",
     "audience": "Ghanaian public and diaspora",
     "priority": "Medium",
-    "stage": "Idea",
-    "editorial_decision": "Candidate",
-    "claim_confidence": "Unverified",
+    "stage": "Analysis",
+    "editorial_decision": "Owner selected Sleeping Wallets for GILB-003 on 2026-11-11. Previous GILB-004 concept label is historical, not an additional story. Script not approved.",
+    "claim_confidence": "BoG source and arithmetic checked; independent cross-release audit and owner claim sign-off pending.",
     "added_on": "2026-11-07",
     "target_publish": "",
     "owner": "GilB",
-    "next_action": "Choose one comparable census indicator and test the district export",
-    "blocker": "Avoid mixing reference years",
+    "next_action": "Review BoG Table 11 analysis at stories/GILB-003/analysis/GILB-003_Analysis_and_Verification_v1.docx; approve editorial hook before script and storyboard.",
+    "blocker": "Publication claims, final script, design and release QA not approved. Research relies on BoG September 2026 source; recheck future revisions.",
     "video_url": ""
   },
   "datasets": [

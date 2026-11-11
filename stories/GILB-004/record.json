@@ -1,20 +1,20 @@
 {
   "story": {
     "id": "GILB-004",
-    "title": "The cedi-dollar exchange-rate story",
+    "title": "Ghana's Music Listening Habits",
     "pillar": "Money & everyday Ghana",
     "angle": "Historical trend",
     "visual_format": "Ghana Over Time",
     "audience": "General Ghanaian audience",
     "priority": "Medium",
     "stage": "Idea",
-    "editorial_decision": "Candidate",
+    "editorial_decision": "Research deferred on 2026-11-11. Local pre-reassignment documents may carry GILB-003 in their filenames; preserve originals and note historical ID.",
     "claim_confidence": "Unverified",
     "added_on": "2026-11-07",
     "target_publish": "",
     "owner": "GilB",
-    "next_action": "Acquire an official time series and define the comparison period",
-    "blocker": "Clearly distinguish exchange-rate measures",
+    "next_action": "Deferred. Preserve pre-reassignment music feasibility research; resume only when owner authorises.",
+    "blocker": "None — deferred by owner, no active production task.",
     "video_url": ""
   },
   "datasets": [
