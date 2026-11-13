@@ -3,10 +3,9 @@
   "published_stories": 0,
   "datasets_acquired": 2,
   "verified_approved_claims": 0,
-  "open_issues": 7,
+  "open_issues": 8,
   "stages": {
-    "Analysis": 1,
-    "Idea": 3,
-    "Review": 2
+    "Idea": 2,
+    "Review": 4
   }
 }

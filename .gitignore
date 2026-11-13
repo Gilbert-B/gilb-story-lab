@@ -14,3 +14,7 @@ Thumbs.db
 *.psd
 # Avoid accidentally publishing unreviewed source data; approve dataset additions intentionally.
 # Keep de-identified, properly licensed raw/clean data only.
+
+# Scoped exceptions: final GilB story masters
+!stories/GILB-003/production/final/GILB003_Ghanas_Sleeping_Wallets_Final.mp4
+!stories/GILB-005/production/final/GILB005_Accra_Growing_Shrinking_Final.mp4

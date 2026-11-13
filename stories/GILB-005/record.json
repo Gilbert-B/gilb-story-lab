@@ -1,21 +1,25 @@
 {
   "story": {
     "id": "GILB-005",
-    "title": "Which Ghana chart hits lasted the longest?",
-    "pillar": "Music, entertainment & culture",
-    "angle": "Ranking",
-    "visual_format": "The Unexpected Winner",
-    "audience": "Music fans",
+    "title": "Accra Is Growing. Accra Is Shrinking.",
+    "pillar": "Ghana by region & district",
+    "angle": "2010–2021 census comparison: Greater Accra region vs former Accra Metropolitan successor districts",
+    "visual_format": "Unpacked by GilB — census data story",
+    "audience": "Ghanaian public and diaspora",
     "priority": "Medium",
-    "stage": "Idea",
-    "editorial_decision": "Candidate",
-    "claim_confidence": "Unverified",
+    "stage": "Review",
+    "editorial_decision": "Final video supplied by owner 2026-11-13. Former GILB-005 starter idea about music chart longevity is superseded; original DATA-005 retained as historical lead only. Final creative/publication approval not separately recorded.",
+    "claim_confidence": "GSS regional totals verified; 10-district comparison arithmetic reproduced. Exact same-area 2010–2021 geographic boundary equivalence unverified.",
     "added_on": "2026-11-07",
     "target_publish": "",
     "owner": "GilB",
-    "next_action": "Validate Ghana-specific historical chart coverage",
-    "blocker": "No chart ranking until coverage and method are documented",
-    "video_url": ""
+    "next_action": "Review final MP4 and 2010–2021 geographic qualification, complete publication fact/rights QA, then record actual post URL/date after publishing.",
+    "blocker": "No certified 2010–2021 boundary polygon crosswalk. Never claim 383,516 people left the identical geographic area based solely on reconstructed counts.",
+    "video_url": "",
+    "production_status": "Completed — final master delivered; publication review pending",
+    "production_completed_on": "2026-11-13",
+    "final_master_file": "stories/GILB-005/production/final/GILB005_Accra_Growing_Shrinking_Final.mp4",
+    "final_master_sha256": "244bdb74a393c0ed87a46357f6f8438c242e6a61406ffa137acb3627c2569378"
   },
   "datasets": [
     {
@@ -31,13 +35,75 @@
       "raw_file": "",
       "clean_file": "",
       "reuse_license": "Check platform terms",
-      "quality_next_check": "Test historical export and ensure ranking comparability",
+      "quality_next_check": "Historical GILB-005 seed idea (Ghana music chart longevity); not evidence for current Accra census video. Retained for provenance.",
       "owner": "GilB"
     }
   ],
   "analyses": [],
   "evidence": [],
-  "assets": [],
+  "assets": [
+    {
+      "id": "AS-036",
+      "asset_type": "Final video",
+      "version": "final",
+      "name": "Final HD production master",
+      "path": "stories/GILB-005/production/final/GILB005_Accra_Growing_Shrinking_Final.mp4",
+      "status": "Completed — final master delivered; publication review pending",
+      "owner": "GilB",
+      "updated_on": "2026-11-13",
+      "quality_review": "Final production asset verified; publication/release QA pending.",
+      "notes": "Unchanged owner-supplied file. 1080x1920; H.264/AAC; 30fps; SHA-256 244bdb74a393c0ed87a46357f6f8438c242e6a61406ffa137acb3627c2569378"
+    },
+    {
+      "id": "AS-037",
+      "asset_type": "Master verification",
+      "version": "v1",
+      "name": "Final-video SHA-256",
+      "path": "stories/GILB-005/production/final/GILB005_Accra_Growing_Shrinking_Final.mp4.sha256",
+      "status": "Recorded",
+      "owner": "GilB",
+      "updated_on": "2026-11-13",
+      "quality_review": "Final production asset verified; publication/release QA pending.",
+      "notes": "Byte-level fingerprint of owner-provided MP4."
+    },
+    {
+      "id": "AS-038",
+      "asset_type": "Production record",
+      "version": "v1",
+      "name": "Archive and status record",
+      "path": "stories/GILB-005/production/final/PRODUCTION_RELEASE_RECORD.md",
+      "status": "Recorded",
+      "owner": "GilB",
+      "updated_on": "2026-11-13",
+      "quality_review": "Final production asset verified; publication/release QA pending.",
+      "notes": "Production completion is distinct from publication clearance."
+    },
+    {
+      "id": "AS-039",
+      "asset_type": "Release QA checklist",
+      "version": "v1",
+      "name": "Remaining publication checks",
+      "path": "stories/GILB-005/production/final/RELEASE_QA_CHECKLIST.md",
+      "status": "Open",
+      "owner": "GilB",
+      "updated_on": "2026-11-13",
+      "quality_review": "Final production asset verified; publication/release QA pending.",
+      "notes": "Final factual, rights and platform checks are pending."
+    }
+  ],
   "posts": [],
-  "issues": []
+  "issues": [
+    {
+      "id": "ISS-011",
+      "type": "Verification blocker",
+      "description": "GILB005-2010-2021-BOUNDARY-CROSSWALK: Exact equivalence of the 2010 metropolitan footprint and summed 2021 successor district polygons has not been independently confirmed.",
+      "priority": "High",
+      "owner": "GilB",
+      "opened_on": "2026-11-13",
+      "due": "",
+      "status": "Open",
+      "resolution": "",
+      "next_action": "Retain on-screen qualifiers; obtain official boundary crosswalk before making an unqualified population-decline claim."
+    }
+  ]
 }

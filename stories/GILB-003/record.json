@@ -2,20 +2,24 @@
   "story": {
     "id": "GILB-003",
     "title": "Ghana's Sleeping Wallets",
-    "pillar": "Ghana by region & district",
-    "angle": "District comparison",
-    "visual_format": "The Hidden Gap",
+    "pillar": "Technology & changing Ghana",
+    "angle": "Registered vs active mobile money accounts (August 2026)",
+    "visual_format": "Unpacked by GilB — data story",
     "audience": "Ghanaian public and diaspora",
     "priority": "Medium",
-    "stage": "Analysis",
-    "editorial_decision": "Owner selected Sleeping Wallets for GILB-003 on 2026-11-11. Previous GILB-004 concept label is historical, not an additional story. Script not approved.",
-    "claim_confidence": "BoG source and arithmetic checked; independent cross-release audit and owner claim sign-off pending.",
+    "stage": "Review",
+    "editorial_decision": "Final video owner-approved 2026-11-12. Production complete, not marked publicly published. Earlier analysis-stage description superseded. Historic DATA-003 census lead predates story reassignment and is not evidence for this episode.",
+    "claim_confidence": "BoG 2026 figures analyzed; separate final factual and rights release review not recorded in repository.",
     "added_on": "2026-11-07",
     "target_publish": "",
     "owner": "GilB",
-    "next_action": "Review BoG Table 11 analysis at stories/GILB-003/analysis/GILB-003_Analysis_and_Verification_v1.docx; approve editorial hook before script and storyboard.",
-    "blocker": "Publication claims, final script, design and release QA not approved. Research relies on BoG September 2026 source; recheck future revisions.",
-    "video_url": ""
+    "next_action": "Archive completed master (done). Complete final factual, source attribution, rights and platform QA; record public post URL/date only after publishing.",
+    "blocker": "Public release checks remain outstanding; do not infer Published from video completion.",
+    "video_url": "",
+    "production_status": "Completed — owner approved",
+    "production_completed_on": "2026-11-12",
+    "final_master_file": "stories/GILB-003/production/final/GILB003_Ghanas_Sleeping_Wallets_Final.mp4",
+    "final_master_sha256": "063f35f4633e66b7f94932a7900f7caa18649eb9e9ae0d96a221d7e9620d2ada"
   },
   "datasets": [
     {
@@ -37,7 +41,68 @@
   ],
   "analyses": [],
   "evidence": [],
-  "assets": [],
+  "assets": [
+    {
+      "id": "AS-031",
+      "asset_type": "Final video",
+      "version": "final",
+      "name": "Final HD production master",
+      "path": "stories/GILB-003/production/final/GILB003_Ghanas_Sleeping_Wallets_Final.mp4",
+      "status": "Completed — owner approved",
+      "owner": "GilB",
+      "updated_on": "2026-11-13",
+      "quality_review": "Final production asset verified; publication/release QA pending.",
+      "notes": "Unchanged owner-supplied file. 1080x1920; H.264/AAC; 30fps; SHA-256 063f35f4633e66b7f94932a7900f7caa18649eb9e9ae0d96a221d7e9620d2ada"
+    },
+    {
+      "id": "AS-032",
+      "asset_type": "Master verification",
+      "version": "v1",
+      "name": "Final-video SHA-256",
+      "path": "stories/GILB-003/production/final/GILB003_Ghanas_Sleeping_Wallets_Final.mp4.sha256",
+      "status": "Recorded",
+      "owner": "GilB",
+      "updated_on": "2026-11-13",
+      "quality_review": "Final production asset verified; publication/release QA pending.",
+      "notes": "Byte-level fingerprint of owner-provided MP4."
+    },
+    {
+      "id": "AS-033",
+      "asset_type": "Production record",
+      "version": "v1",
+      "name": "Archive and status record",
+      "path": "stories/GILB-003/production/final/PRODUCTION_RELEASE_RECORD.md",
+      "status": "Recorded",
+      "owner": "GilB",
+      "updated_on": "2026-11-13",
+      "quality_review": "Final production asset verified; publication/release QA pending.",
+      "notes": "Production completion is distinct from publication clearance."
+    },
+    {
+      "id": "AS-034",
+      "asset_type": "Release QA checklist",
+      "version": "v1",
+      "name": "Remaining publication checks",
+      "path": "stories/GILB-003/production/final/RELEASE_QA_CHECKLIST.md",
+      "status": "Open",
+      "owner": "GilB",
+      "updated_on": "2026-11-13",
+      "quality_review": "Final production asset verified; publication/release QA pending.",
+      "notes": "Final factual, rights and platform checks are pending."
+    },
+    {
+      "id": "AS-035",
+      "asset_type": "Narration script",
+      "version": "v3 final",
+      "name": "GILB-003 approved narration",
+      "path": "stories/GILB-003/scripts/narration_v3_final_owner_approved.md",
+      "status": "Owner approved",
+      "owner": "GilB",
+      "updated_on": "2026-11-13",
+      "quality_review": "Final production asset verified; publication/release QA pending.",
+      "notes": "Exact owner-approved script text."
+    }
+  ],
   "posts": [],
   "issues": []
 }
