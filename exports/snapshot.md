@@ -1,6 +1,6 @@
 # GilB Registry Snapshot
 
-**Stories:** 6  |  **Published:** 0  |  **Datasets acquired:** 2  |  **Claims approved:** 0
+**Stories:** 7  |  **Published:** 0  |  **Datasets acquired:** 2  |  **Claims approved:** 6
 
 | ID | Story | Stage | Next action |
 |---|---|---|---|
@@ -9,4 +9,5 @@
 | GILB-003 | Ghana's Sleeping Wallets | Review | Archive completed master (done). Complete final factual, source attribution, rights and platform QA; record public post URL/date only after publishing. |
 | GILB-004 | Ghana's Music Listening Habits | Idea | Deferred. Preserve pre-reassignment music feasibility research; resume only when owner authorises. |
 | GILB-005 | Accra Is Growing. Accra Is Shrinking. | Review | Review final MP4 and 2010–2021 geographic qualification, complete publication fact/rights QA, then record actual post URL/date after publishing. |
-| GILB-006 | Where are young Ghanaians struggling to find work? | Idea | Identify consistent youth labour indicators from GSS |
+| GILB-006 | Lake Volta — Largest by what? | Ready to publish | Publish on TikTok, Instagram Reels and YouTube Shorts; then record post URLs and dates. |
+| GILB-007 | Where are young Ghanaians struggling to find work? | Idea | Identify consistent youth labour indicators from GSS |

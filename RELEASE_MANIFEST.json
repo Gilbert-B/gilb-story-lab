@@ -10,5 +10,11 @@
     "sha": "244bdb74a393c0ed87a46357f6f8438c242e6a61406ffa137acb3627c2569378",
     "length": 12075215,
     "duration": 122.8
+  },
+  "GILB-006": {
+    "file": "GILB006_Lake_Volta_Largest_By_What_Final.mp4",
+    "sha": "bf17dae3c42b56df52f0220429bd53a3d9b05cc233f8f1771fb7e037c81de0f9",
+    "length": 18962828,
+    "duration": 119.381
   }
 }

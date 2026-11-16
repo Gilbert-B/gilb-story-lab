@@ -1,0 +1,28 @@
+{
+ "lakes": {
+  "volta": {
+   "source": "Natural Earth 1:10m lakes v5 (public domain)",
+   "measured_km2_source": 7994,
+   "measured_km2_simplified": 7995,
+   "published_km2": 8502,
+   "points": 1370
+  },
+  "kariba": {
+   "source": "OpenStreetMap relation 318675 (c) OpenStreetMap contributors, ODbL",
+   "measured_km2_source": 5371,
+   "measured_km2_simplified": 5431,
+   "published_km2": 5580,
+   "points": 2700
+  }
+ },
+ "dams": {
+  "akosombo": [
+   0.0569,
+   6.2994
+  ],
+  "kariba": [
+   28.7614,
+   -16.5225
+  ]
+ }
+}
