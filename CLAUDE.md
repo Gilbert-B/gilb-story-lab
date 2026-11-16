@@ -144,7 +144,7 @@ Apply whichever of these the assignment calls for:
 
 ## 10. Story backlog reference
 
-The starter repo included six **candidate** ideas, not six approved video productions: `GILB-001` Hearts of Oak defensive paradox; `GILB-002` mobile internet market; `GILB-003` district disparities; `GILB-004` cedi exchange history; `GILB-005` Ghana music chart longevity; `GILB-006` youth employment. When an assignment involves one, read its `record.json` for current details. The alleged `GILB-001` clean-sheet total is an **unverified research lead** until independently reconciled match by match. Do not use it as a confirmed headline.
+The starter repo included six **candidate** ideas, not six approved video productions: `GILB-001` Hearts of Oak defensive paradox; `GILB-002` mobile internet market; `GILB-003` district disparities; `GILB-004` cedi exchange history; `GILB-005` Ghana music chart longevity; `GILB-006` youth employment. **Update 2026-11-16:** by GilB's direction, `GILB-006` is now *Lake Volta — Largest by what?* (owner-approved final video, stage Ready to publish), and the youth-employment idea moved unchanged to `GILB-007`. When an assignment involves one, read its `record.json` for current details. The alleged `GILB-001` clean-sheet total is an **unverified research lead** until independently reconciled match by match. Do not use it as a confirmed headline.
 
 ## 11. Capability roadmap (not all implemented; start nothing without assignment)
 
