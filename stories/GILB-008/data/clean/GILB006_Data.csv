@@ -1,0 +1,25 @@
+measure,value,unit,period,used_in_video,source,url,status
+Agriculture share of employed persons (15+),37.2,%,Q3 2025,yes,GSS Quarterly Labour Force Survey Q1-Q3 2025,https://statsghana.gov.gh/gssmain/fileUpload/pressrelease/2025%20Q1-3%20QLFS%20Report.pdf,verified in GSS report
+People employed in agriculture,5.0,million,Q3 2025,yes,GSS Quarterly Labour Force Survey Q1-Q3 2025,https://statsghana.gov.gh/gssmain/fileUpload/pressrelease/2025%20Q1-3%20QLFS%20Report.pdf,verified in GSS report (about 5.0 million)
+Agriculture share of GDP,22.8,%,2025 provisional,yes,"GSS 2025 annual GDP release (17 Mar 2026), via GNA",https://gna.org.gh/2026/03/ghanas-economy-grows-by-six-per-cent-in-2025-gss/,reported by GSS; real vs nominal to confirm
+Agriculture real growth,6.8,%,2025,yes,"GSS 2025 annual GDP release, via GNA",https://gna.org.gh/2026/03/ghanas-economy-grows-by-six-per-cent-in-2025-gss/,reported by GSS
+Real GDP growth (whole economy),6.0,%,2025,yes,"GSS 2025 annual GDP release, via GNA",https://gna.org.gh/2026/03/ghanas-economy-grows-by-six-per-cent-in-2025-gss/,reported by GSS
+Agriculture share of total bank credit (outstanding),4.7,%,Dec 2024,yes,"BoG Monetary Policy Report Jan 2026, Figure 6.1",https://www.bog.gov.gh/wp-content/uploads/2026/02/Monetary-Policy-Report-January-2026-1-2.pdf,chart reading; confirm in data table
+Agriculture share of total bank credit (outstanding),4.3,%,Dec 2025,yes,"BoG Monetary Policy Report Jan 2026, Figure 6.1",https://www.bog.gov.gh/wp-content/uploads/2026/02/Monetary-Policy-Report-January-2026-1-2.pdf,chart reading; sector shares add to 99.9%
+Agriculture share of total bank credit (outstanding),3.9,%,Jun 2025,no,"BoG Monetary Policy Report Jul 2026, Figure 6.1",https://www.bog.gov.gh/wp-content/uploads/2026/08/Monetary-Policy-Report-July-2026.pdf,chart reading
+Agriculture share of total bank credit (outstanding),3.1,%,Jun 2026,no,"BoG Monetary Policy Report Jul 2026, Figure 6.1",https://www.bog.gov.gh/wp-content/uploads/2026/08/Monetary-Policy-Report-July-2026.pdf,chart reading; sector shares add to 100.0%
+Banks' gross loans,111.0,GH¢ bn,Dec 2025,yes,BoG MPR Jan 2026; MyJoyOnline,https://www.myjoyonline.com/credit-to-public-sector-contracted-by-25-in-2025-to-gh%C2%A24-8bn-bog/,reported by BoG
+Banks' gross loans growth,16.2,% y/y,Dec 2024 to Dec 2025,yes,BoG MPR Jan 2026,https://www.bog.gov.gh/wp-content/uploads/2026/02/Monetary-Policy-Report-January-2026-1-2.pdf,reported by BoG
+Banks' gross loans,95.5,GH¢ bn,Dec 2024,yes (as ≈),computed: 111.0 / 1.162,,computed
+Private-sector credit,106.2,GH¢ bn,Dec 2025,no,BoG MPR Jan 2026,https://www.bog.gov.gh/wp-content/uploads/2026/02/Monetary-Policy-Report-January-2026-1-2.pdf,reported by BoG
+Banks' gross loans,124.3,GH¢ bn,Jun 2026,no,BoG MPR Jul 2026,https://www.bog.gov.gh/wp-content/uploads/2026/08/Monetary-Policy-Report-July-2026.pdf,reported by BoG
+Bank loans to agriculture,4.49,GH¢ bn,Dec 2024,yes (as ≈4.5),computed: 4.7% x 95.5,,computed
+Bank loans to agriculture,4.77,GH¢ bn,Dec 2025,yes (as ≈4.8),computed: 4.3% x 111.0,,computed
+Bank loans to agriculture growth,6,% (approx),Dec 2024 to Dec 2025,yes (as ≈ +6%),computed,,computed; direction robust to rounding (+4% to +9%)
+Bank loans to agriculture,3.9,GH¢ bn,Jun 2026,no,computed: 3.1% x 124.3,,computed from chart reading; do not use until BoG cedi figure found
+Agriculture NPL ratio,46.3,%,Dec 2025,no,BoG,,left out (reads as a cause)
+Agriculture NPL ratio,65.1,%,Jun 2026,no,BoG MPR Jul 2026,https://www.bog.gov.gh/wp-content/uploads/2026/08/Monetary-Policy-Report-July-2026.pdf,left out
+Agriculture NPL ratio,60.9,%,Aug 2026,no,"BoG Sept 2026 report, via GhanaWeb",https://www.ghanaweb.com/GhanaHomePage/business/Six-in-10-agricultural-loans-go-bad-as-banks-cut-lending-to-sector-2057676,left out
+Agriculture share of employed persons (census),33,%,2021,no,GSS 2021 Population and Housing Census,,fallback only
+GIRSAL guarantees issued (cumulative),943.42,GH¢ m,to 30 Jun 2026,no,GIRSAL,https://www.girsal.com/agricultural-credit-guarantee-scheme/,GIRSAL's own figure
+GIRSAL loans guaranteed (cumulative),1.85,GH¢ bn,2019 to 30 Jun 2026,no,GIRSAL,https://www.girsal.com/,"GIRSAL's own figure; over GH¢1.85bn, 6,695 agribusinesses"

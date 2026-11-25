@@ -1,6 +1,6 @@
 # GilB Registry Snapshot
 
-**Stories:** 7  |  **Published:** 0  |  **Datasets acquired:** 2  |  **Claims approved:** 6
+**Stories:** 8  |  **Published:** 0  |  **Datasets acquired:** 2  |  **Claims approved:** 8
 
 | ID | Story | Stage | Next action |
 |---|---|---|---|
@@ -11,3 +11,4 @@
 | GILB-005 | Accra Is Growing. Accra Is Shrinking. | Review | Review final MP4 and 2010–2021 geographic qualification, complete publication fact/rights QA, then record actual post URL/date after publishing. |
 | GILB-006 | Lake Volta — Largest by what? | Ready to publish | Publish on TikTok, Instagram Reels and YouTube Shorts; then record post URLs and dates. |
 | GILB-007 | Where are young Ghanaians struggling to find work? | Idea | Identify consistent youth labour indicators from GSS |
+| GILB-008 | Four Cedis in a Hundred | Review | Complete the research-pack open checks (BoG data table, GSS release) and mark claims Verified; then Ready to publish, publish and record post URLs. |

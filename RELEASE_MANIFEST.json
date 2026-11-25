@@ -16,5 +16,11 @@
     "sha": "bf17dae3c42b56df52f0220429bd53a3d9b05cc233f8f1771fb7e037c81de0f9",
     "length": 18962828,
     "duration": 119.381
+  },
+  "GILB-008": {
+    "file": "GILB008_Four_Cedis_In_A_Hundred_Final.mp4",
+    "sha": "122506aa1e73c0fb6c0024200a9b45758d01e4e1c7a227fc373623973727811e",
+    "length": 10556217,
+    "duration": 109.6
   }
 }
