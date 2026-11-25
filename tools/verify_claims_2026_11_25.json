@@ -1,0 +1,362 @@
+{
+  "GILB-001": {
+    "update_evidence": {
+      "EV-001": {
+        "verification_status": "Verified",
+        "qualification": "Team clean sheets. Transcription, RSSSF and the Ghana FA all give 24 in 34 matches (GFA: a new league record)."
+      },
+      "EV-002": {
+        "verification_status": "Verified",
+        "qualification": "Ghana FA final-table article and RSSSF: Hearts third on 54 points."
+      },
+      "EV-004": {
+        "verification_status": "Verified",
+        "qualification": "13 goalless draws in both the transcription and an independent re-read of the RSSSF results; computed, not an official GFA statistic."
+      },
+      "EV-005": {
+        "verification_status": "Verified",
+        "qualification": "RSSSF final table: Hearts 13-15-6 (54), Medeama 17-11-6 (62, champions). Descriptive, not causal."
+      }
+    },
+    "new_evidence": [
+      {
+        "claim": "Hearts of Oak conceded just 15 goals in the 2025/26 league campaign.",
+        "dataset": "DATA-007",
+        "source_url": "https://www.rsssf.org/tablesg/gha2026.html",
+        "qualification": "RSSSF table 25-15; transcription total 15."
+      },
+      {
+        "claim": "Hearts managed only 25 goals in 34 matches, an average of 0.74 goals per game.",
+        "dataset": "DATA-007",
+        "source_url": "https://www.rsssf.org/tablesg/gha2026.html",
+        "qualification": "25 / 34 = 0.735."
+      },
+      {
+        "claim": "The league average was 1.02 goals per team per game.",
+        "dataset": "DATA-008",
+        "source_url": "https://ghanafa.org/ghana-premier-league-2025-26-statistics?amp=1",
+        "qualification": "GFA: 627 goals in 306 matches; 627 / 612 = 1.02. Includes 21 goals from seven matches awarded 3-0 after Hohoe United withdrew; played matches only give 1.01."
+      },
+      {
+        "claim": "Hearts failed to score in 18 matches.",
+        "dataset": "DATA-007",
+        "source_url": "https://www.rsssf.org/tablesg/gha2026.html",
+        "qualification": "Count of matches with 0 goals for in the 34-match transcription, re-checked against RSSSF."
+      }
+    ],
+    "issues": {
+      "ISS-001": {
+        "status": "Resolved",
+        "resolution": "2026-11-25: 24 clean sheets confirmed match by match (transcription and independent RSSSF re-read) and by the Ghana FA season statistics. See evidence/CLAIM_VERIFICATION_2026-11-25.md."
+      }
+    },
+    "story": {
+      "claim_confidence": "All 11 narrated claims verified against RSSSF and Ghana FA sources on 2026-11-25; owner approval pending.",
+      "next_action": "Owner to approve each verified claim (evidence register). Then close production QA (ISS-003 to ISS-005), move to Ready to publish and schedule."
+    }
+  },
+  "GILB-002": {
+    "new_datasets": [
+      {
+        "key": "NCA_BULLETINS",
+        "publisher": "National Communications Authority (NCA)",
+        "name": "Quarterly Statistical Bulletins on Communications in Ghana, Q1 2025 to Q1 2026 (mobile data subscriptions and traffic by operator)",
+        "source_url": "https://nca.org.gh/reports/",
+        "reference_period": "Q1 2025 to Q1 2026",
+        "granularity": "Operator-quarter",
+        "classification": "Official statistics",
+        "acquisition_status": "Downloaded",
+        "acquired_on": "2026-11-25",
+        "raw_file": "stories/GILB-002/evidence/sources/",
+        "clean_file": "",
+        "reuse_license": "Public official statistics; cite NCA",
+        "quality_next_check": "Bulletins repeat earlier quarters; figures agree across editions."
+      }
+    ],
+    "update_evidence": {
+      "EV-009": {
+        "verification_status": "Verified",
+        "qualification": "NCA Q1 2026 Bulletin Tables 15 and 18: MTN 80.12% of data subscriptions (end-March) vs 87.31% of Q1 data traffic. Two different measures; not per-customer usage."
+      }
+    },
+    "new_evidence": [
+      {
+        "claim": "Telecel and AT together had 20% of subscriptions but carried only about 13% of the data (Q1 2026).",
+        "dataset": "NCA_BULLETINS",
+        "source_url": "https://nca.org.gh/wp-content/uploads/2026/06/Q1_2026_Statistical_Bulletin.pdf",
+        "qualification": "15.53% + 4.34% = 19.87% of subscriptions; 11.49% + 1.19% = 12.68% of traffic."
+      },
+      {
+        "claim": "In early 2025, MTN had about 79% of subscriptions and 82% of the data, a gap of just over 3 percentage points.",
+        "dataset": "NCA_BULLETINS",
+        "source_url": "https://nca.org.gh/wp-content/uploads/2025/07/Q1-2025-Statistical-Bulletin.pdf",
+        "qualification": "Q1 2025 Bulletin Tables 13 and 16: 79.05% and 82.30%, gap 3.25 pp."
+      },
+      {
+        "claim": "By early 2026, that gap had more than doubled to over 7 points.",
+        "dataset": "NCA_BULLETINS",
+        "source_url": "https://nca.org.gh/wp-content/uploads/2026/06/Q1_2026_Statistical_Bulletin.pdf",
+        "qualification": "7.19 pp in Q1 2026 vs 3.25 pp in Q1 2025 (2.2x)."
+      },
+      {
+        "claim": "Most of the widening had already happened by mid-2025.",
+        "dataset": "NCA_BULLETINS",
+        "source_url": "https://nca.org.gh/wp-content/uploads/2025/12/Q2-2025-Statistical-Bulletin.pdf",
+        "qualification": "Q2 2025 gap 6.99 pp (77.75% vs 84.74%): 3.74 of the 3.94 pp widening (95%). Part of the Q2 move was a dip in MTN's subscription share."
+      }
+    ],
+    "issues": {
+      "ISS-006": {
+        "resolution": "2026-11-25: NCA Quarterly Bulletins Q1 2025, Q2 2025, Q3 2025 and Q1 2026 archived in evidence/sources/. Monthly releases (e.g. Feb and Jul 2026) not yet archived."
+      }
+    },
+    "story": {
+      "claim_confidence": "All narrated claims verified against NCA Quarterly Bulletins Q1 2025 to Q1 2026 on 2026-11-25 (claims taken from the final video by speech recognition); owner approval pending.",
+      "next_action": "Owner to approve each verified claim (ISS-009) and confirm the narration wording by ear; finish rights and platform checks; then Ready to publish."
+    }
+  },
+  "GILB-003": {
+    "new_datasets": [
+      {
+        "key": "BOG_SEFD",
+        "publisher": "Bank of Ghana",
+        "name": "Summary of Macroeconomic and Financial Data, September 2026, Table 11 Payment Systems Data (mobile money)",
+        "source_url": "https://www.bog.gov.gh/wp-content/uploads/2026/09/Summary-of-Economic-and-Financial-Data-September-2026.pdf",
+        "reference_period": "Aug 2025 to Aug 2026",
+        "granularity": "National, monthly",
+        "classification": "Official statistics",
+        "acquisition_status": "Downloaded",
+        "acquired_on": "2026-11-25",
+        "raw_file": "stories/GILB-003/evidence/sources/BoG_Summary_of_Economic_and_Financial_Data_September_2026.pdf",
+        "clean_file": "stories/GILB-003/data/raw/GILB-003_BoG_Table11_2025-08_to_2026-08.csv",
+        "reuse_license": "Public official statistics; cite Bank of Ghana",
+        "quality_next_check": "Data subject to revision by BoG."
+      },
+      {
+        "key": "GSS_PROJ",
+        "publisher": "Ghana Statistical Service",
+        "name": "Projected population 2026 (Ghana at a Glance)",
+        "source_url": "https://statsghana.gov.gh/",
+        "reference_period": "2026",
+        "granularity": "National",
+        "classification": "Official projection",
+        "acquisition_status": "Source lead",
+        "acquired_on": "",
+        "raw_file": "",
+        "clean_file": "",
+        "reuse_license": "Public; cite GSS",
+        "quality_next_check": "Projection from the 2021 census, not a count."
+      }
+    ],
+    "new_evidence": [
+      {
+        "claim": "Ghana has about 34 million people.",
+        "dataset": "GSS_PROJ",
+        "source_url": "https://statsghana.gov.gh/",
+        "qualification": "GSS projected population 2026: 34,378,768. A projection, not a census count."
+      },
+      {
+        "claim": "By August 2026, Ghana had 85.8 million registered mobile money accounts, more than twice the population.",
+        "dataset": "BOG_SEFD",
+        "source_url": "https://www.bog.gov.gh/wp-content/uploads/2026/09/Summary-of-Economic-and-Financial-Data-September-2026.pdf",
+        "qualification": "BoG Table 11; 85.8 / 34.38 = 2.5. Accounts, not people."
+      },
+      {
+        "claim": "In August 2026 alone, mobile money processed over one billion transactions, nearly 400 every second on average.",
+        "dataset": "BOG_SEFD",
+        "source_url": "https://www.bog.gov.gh/wp-content/uploads/2026/09/Summary-of-Economic-and-Financial-Data-September-2026.pdf",
+        "qualification": "1,046 million; 1,046m / (31 x 86,400 s) = 390.5 per second."
+      },
+      {
+        "claim": "As of August 2026, the Bank of Ghana classified 26.4 million accounts as active, fewer than one in three; the other 59.4 million were not.",
+        "dataset": "BOG_SEFD",
+        "source_url": "https://www.bog.gov.gh/wp-content/uploads/2026/09/Summary-of-Economic-and-Financial-Data-September-2026.pdf",
+        "qualification": "26.4 / 85.8 = 30.8%; 85.8 - 26.4 = 59.4."
+      },
+      {
+        "claim": "The Bank of Ghana considers an account active if it has recorded at least one transaction in the previous 90 days.",
+        "dataset": "BOG_SEFD",
+        "source_url": "https://www.bog.gov.gh/wp-content/uploads/2026/09/Summary-of-Economic-and-Financial-Data-September-2026.pdf",
+        "qualification": "BoG Table 11, footnote 15."
+      },
+      {
+        "claim": "Between August 2025 and August 2026, registered accounts increased by 8.1 million and active accounts by 1.3 million, so the gap widened by almost 7 million.",
+        "dataset": "BOG_SEFD",
+        "source_url": "https://www.bog.gov.gh/wp-content/uploads/2026/09/Summary-of-Economic-and-Financial-Data-September-2026.pdf",
+        "qualification": "77.7 to 85.8; 25.1 to 26.4; not-active 52.6 to 59.4 (+6.8). Rounded BoG values."
+      }
+    ],
+    "story": {
+      "claim_confidence": "All narrated claims verified against BoG SEFD September 2026 (Table 11) and the GSS 2026 projection on 2026-11-25; owner approval pending.",
+      "next_action": "Owner to approve each verified claim; finish rights and platform QA; then Ready to publish. Record post URL/date only after publishing."
+    }
+  },
+  "GILB-008": {
+    "new_datasets": [
+      {
+        "key": "GSS_GDP_XLSX",
+        "publisher": "Ghana Statistical Service (GSS)",
+        "name": "Annual GDP 2013-2025 (March 2026 edition), Tables 1.1-1.4: sector shares at current prices and real growth",
+        "source_url": "https://statsghana.gov.gh/api/minio/file?key=data_statistics%2Feconomic%2FNational%20Accounts%2FAnnualGDPbyProductionApproach%2FAnnual_2013_2025_GDP_web.xlsx",
+        "reference_period": "2013-2025 (2025 provisional)",
+        "granularity": "National, annual, by sector",
+        "classification": "Official statistics",
+        "acquisition_status": "Downloaded",
+        "acquired_on": "2026-11-25",
+        "raw_file": "stories/GILB-008/evidence/sources/GSS_Annual_2013_2025_GDP_web.xlsx",
+        "clean_file": "",
+        "reuse_license": "Public official statistics; cite GSS",
+        "quality_next_check": "2025 values provisional; check the next GSS revision."
+      }
+    ],
+    "update_evidence": {
+      "EV-018": {
+        "verification_status": "Verified",
+        "source_dataset_id": "GSS_GDP_XLSX",
+        "qualification": "GSS Table 1.2: 22.78% of GDP at basic prices, current prices (nominal), 2025 provisional. At constant 2013 prices the share would be 22.0%.",
+        "source_url": "https://statsghana.gov.gh/api/minio/file?key=data_statistics%2Feconomic%2FNational%20Accounts%2FAnnualGDPbyProductionApproach%2FAnnual_2013_2025_GDP_web.xlsx"
+      },
+      "EV-019": {
+        "verification_status": "Verified",
+        "qualification": "BoG MPR Jan 2026, Table A.5 (data table): GH¢4,805.21m of GH¢110,972.72m = 4.33% of total bank credit, Dec 2025. Total credit, not private-sector credit (4.53%)."
+      },
+      "EV-020": {
+        "verification_status": "Verified",
+        "source_dataset_id": "GSS_GDP_XLSX",
+        "qualification": "GSS Table 1.4: agriculture 6.78%, GDP 5.95% (purchasers' value), 2025 provisional real growth.",
+        "source_url": "https://statsghana.gov.gh/api/minio/file?key=data_statistics%2Feconomic%2FNational%20Accounts%2FAnnualGDPbyProductionApproach%2FAnnual_2013_2025_GDP_web.xlsx"
+      },
+      "EV-021": {
+        "verification_status": "Verified",
+        "qualification": "BoG Table A.5: GH¢4,495.79m (Dec 2024) to GH¢4,805.21m (Dec 2025), +6.88%."
+      },
+      "EV-022": {
+        "verification_status": "Verified",
+        "source_dataset_id": "DATA-018",
+        "qualification": "BoG Table A.5: total +16.15% to GH¢110,972.72m; MPR text 'increased by 16.2 percent ... to GH¢111.0 billion'."
+      },
+      "EV-023": {
+        "verification_status": "Verified",
+        "qualification": "BoG Table A.5: 4.71% (Dec 2024) to 4.33% (Dec 2025); Figure 6.1 labels agree."
+      },
+      "EV-024": {
+        "verification_status": "Verified",
+        "qualification": "Table A.5 covers deposit money banks only (DMB credit allocations)."
+      }
+    },
+    "issues": {
+      "ISS-015": {
+        "status": "Resolved",
+        "resolution": "2026-11-25: BoG shares and cedi amounts confirmed in MPR Table A.5; GSS workbook confirms 22.78% is the nominal share at basic prices and the 6.78% / 5.95% growth; source files archived in evidence/sources/. Not done (no video claim depends on them): newer MPRs, the 1999-2023 Akolgo column. See evidence/CLAIM_VERIFICATION_2026-11-25.md."
+      }
+    },
+    "story": {
+      "claim_confidence": "All 9 narrated claims verified against primary sources (GSS QLFS, GSS annual GDP workbook, BoG MPR Jan 2026 Table A.5) on 2026-11-25; 7 await owner approval.",
+      "next_action": "Owner to approve the 7 newly verified claims (EV-018 to EV-024); then Ready to publish, publish and record post URLs."
+    }
+  },
+  "GILB-005": {
+    "new_datasets": [
+      {
+        "key": "CITYPOP",
+        "publisher": "citypopulation.de (compiling Ghana Statistical Service census figures)",
+        "name": "Ghana regions and Greater Accra districts, census 2010 and 2021 (2010 re-tabulated to 2021 boundaries)",
+        "source_url": "https://www.citypopulation.de/en/ghana/admin/03__greater_accra",
+        "reference_period": "Census 2010-09-26 and 2021-06-27",
+        "granularity": "Region / district",
+        "classification": "Secondary compilation of official statistics",
+        "acquisition_status": "Source lead",
+        "acquired_on": "",
+        "raw_file": "",
+        "clean_file": "",
+        "reuse_license": "Cite GSS as the original source",
+        "quality_next_check": "Confirm district figures in GSS 2021 PHC Vol 3A (404 on 2026-11-25)."
+      },
+      {
+        "key": "GSS_HL",
+        "publisher": "Ghana Statistical Service",
+        "name": "2021 PHC General Report, Volume 3 Highlights (regional shares)",
+        "source_url": "https://census2021.statsghana.gov.gh/gssmain/fileUpload/reportthemelist/Volume 3 Highlights.pdf",
+        "reference_period": "2021",
+        "granularity": "Region",
+        "classification": "Official statistics",
+        "acquisition_status": "Source lead",
+        "acquired_on": "",
+        "raw_file": "",
+        "clean_file": "",
+        "reuse_license": "Public; cite GSS",
+        "quality_next_check": "Figure 1.2: Greater Accra 17.7%, Ashanti 17.6%."
+      }
+    ],
+    "new_evidence": [
+      {
+        "claim": "Between the 2010 and 2021 censuses, Greater Accra region grew from about 4 million people to nearly 5.5 million, an increase of almost 1.5 million.",
+        "dataset": "CITYPOP",
+        "source_url": "https://www.citypopulation.de/en/ghana/admin/",
+        "qualification": "4,010,054 to 5,455,692 (+1,445,638)."
+      },
+      {
+        "claim": "In 2021 Greater Accra overtook Ashanti region to become Ghana's most populous region.",
+        "dataset": "GSS_HL",
+        "source_url": "https://census2021.statsghana.gov.gh/gssmain/fileUpload/reportthemelist/Volume 3 Highlights.pdf",
+        "qualification": "GSS Highlights Figure 1.2: 17.7% vs 17.6%; Ashanti 5,440,463."
+      },
+      {
+        "claim": "Ashanti region had held that position since 1970.",
+        "dataset": "CITYPOP",
+        "source_url": "https://www.graphic.com.gh/news/general-news/ghana-s-most-populous-region-greater-accra-overtakes-ashanti.html",
+        "qualification": "GSS's own wording (via Graphic). Holds on the region boundaries of the time (Eastern, then including Accra, led in 1960). On today's boundaries Ashanti also led in 1960. Owner wording decision."
+      },
+      {
+        "claim": "In 2010 Ashanti was more than 770,000 people ahead; by 2021 Greater Accra was ahead by a little over 15,000.",
+        "dataset": "CITYPOP",
+        "source_url": "https://www.citypopulation.de/en/ghana/admin/",
+        "qualification": "4,780,380 - 4,010,054 = 770,326; 5,455,692 - 5,440,463 = 15,229 (final figures)."
+      },
+      {
+        "claim": "In a later breakdown of the 2010 census, Accra Metropolitan, not counting La, had about 1.67 million residents.",
+        "dataset": "CITYPOP",
+        "source_url": "https://www.citypopulation.de/en/ghana/admin/03__greater_accra",
+        "verification_status": "Cross-checked (GSS figures via citypopulation.de); GSS table not opened",
+        "qualification": "1,665,086 (post-2012 AMA, excluding La Dade-Kotopon 183,528)."
+      },
+      {
+        "claim": "By 2021, the 10 districts formed from the former metropolis had a combined census population of about 1.28 million, a gap of roughly 384,000.",
+        "dataset": "CITYPOP",
+        "source_url": "https://www.citypopulation.de/en/ghana/admin/03__greater_accra",
+        "verification_status": "Cross-checked (GSS figures via citypopulation.de); GSS table not opened",
+        "qualification": "1,281,570; 1,665,086 - 1,281,570 = 383,516. Boundary equivalence not certified (ISS-011); not proof that people left."
+      },
+      {
+        "claim": "Kpone Katamanso went from about 110,000 residents to more than 417,000.",
+        "dataset": "CITYPOP",
+        "source_url": "https://www.citypopulation.de/en/ghana/admin/03__greater_accra",
+        "verification_status": "Cross-checked (GSS figures via citypopulation.de); GSS table not opened",
+        "qualification": "109,864 (2010) to 417,334 (2021)."
+      },
+      {
+        "claim": "District boundaries changed between the censuses, and the census records where people were counted on census night, so these numbers don't prove 384,000 people left the old city or went to Kpone Katamanso.",
+        "dataset": "CITYPOP",
+        "source_url": "https://www.citypopulation.de/en/ghana/admin/03__greater_accra",
+        "qualification": "Framing; consistent with ISS-011."
+      }
+    ],
+    "new_issues": [
+      {
+        "type": "Verification blocker",
+        "description": "GILB005-GSS-DISTRICT-TABLE: district-level figures (AMA 2010 1,665,086; 10 successor districts 1,281,570; Kpone Katamanso 109,864 to 417,334) agree across citypopulation.de and other GSS-citing sources, but the GSS 2021 PHC Vol 3A PDF returned 404 on 2026-11-25.",
+        "priority": "High",
+        "owner": "GilB",
+        "opened_on": "2026-11-25",
+        "due": "",
+        "status": "Open",
+        "resolution": "",
+        "next_action": "Open GSS 2021 PHC Vol 3A (district table) in a browser or obtain a copy; confirm the four figures; then mark the three cross-checked claims Verified."
+      }
+    ],
+    "story": {
+      "claim_confidence": "2026-11-25: regional claims verified (GSS-compiled figures and GSS Vol 3 Highlights); three district-level claims cross-checked but the GSS district table could not be opened; boundary caveat (ISS-011) stands. Owner approval pending.",
+      "next_action": "Confirm district figures in GSS 2021 PHC Vol 3A (new issue); decide 'since 1970' wording; owner approval of claims; then Ready to publish."
+    }
+  }
+}
