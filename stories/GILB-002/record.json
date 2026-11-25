@@ -7,13 +7,13 @@
     "visual_format": "The Unexpected Winner",
     "audience": "General Ghanaian audience",
     "priority": "High",
-    "stage": "Review",
+    "stage": "Ready to publish",
     "editorial_decision": "Final GILB-002 cut approved by owner on 2026-11-10. Production complete; not publication approval.",
-    "claim_confidence": "All narrated claims verified (2026-11-25) and approved by GilB (2026-11-25). Four retired claims from the excluded first angle remain in the evidence list, unapproved.",
+    "claim_confidence": "All five narrated claims verified (2026-11-25) and approved by GilB (2026-11-25). Retired first-angle claims EV-003, EV-006 to EV-008 kept on file as Excluded.",
     "added_on": "2026-11-07",
     "target_publish": "",
     "owner": "GilB",
-    "next_action": "Decide how to retire EV-003 and EV-006 to EV-008 (excluded first-angle claims) so the registry allows Ready to publish; then publish and record post URLs.",
+    "next_action": "Publish on the chosen platforms, then record each post URL and date (posts) before marking Published.",
     "blocker": "No production blocker. Public release requires separate factual, rights and platform sign-off.",
     "video_url": "",
     "production_status": "Completed — owner approved",
@@ -111,7 +111,8 @@
       "checked_by": "",
       "checked_on": "",
       "safe_to_publish": "No",
-      "qualification": "Kept as background/audit only. Do not use this claim in GILB-002 public script without new editorial verification."
+      "qualification": "Kept as background/audit only. Do not use this claim in GILB-002 public script without new editorial verification.",
+      "public_scope": "Excluded"
     },
     {
       "id": "EV-006",
@@ -125,7 +126,8 @@
       "safe_to_publish": "No",
       "approved_by": "",
       "approval_date": "",
-      "qualification": "Kept as background/audit only. Do not use this claim in GILB-002 public script without new editorial verification."
+      "qualification": "Kept as background/audit only. Do not use this claim in GILB-002 public script without new editorial verification.",
+      "public_scope": "Excluded"
     },
     {
       "id": "EV-007",
@@ -139,7 +141,8 @@
       "safe_to_publish": "No",
       "approved_by": "",
       "approval_date": "",
-      "qualification": "Kept as background/audit only. Do not use this claim in GILB-002 public script without new editorial verification."
+      "qualification": "Kept as background/audit only. Do not use this claim in GILB-002 public script without new editorial verification.",
+      "public_scope": "Excluded"
     },
     {
       "id": "EV-008",
@@ -153,7 +156,8 @@
       "safe_to_publish": "No",
       "approved_by": "",
       "approval_date": "",
-      "qualification": "Kept as background/audit only. Do not use this claim in GILB-002 public script without new editorial verification."
+      "qualification": "Kept as background/audit only. Do not use this claim in GILB-002 public script without new editorial verification.",
+      "public_scope": "Excluded"
     },
     {
       "id": "EV-009",
@@ -490,8 +494,8 @@
       "owner": "GilB",
       "opened_on": "2026-11-08",
       "due": "",
-      "status": "Open",
-      "resolution": "",
+      "status": "Resolved",
+      "resolution": "2026-11-25: all five narrated claims verified against NCA bulletins and approved by GilB. See evidence/CLAIM_VERIFICATION_2026-11-25.md.",
       "next_action": "External or owner review of v2 verification report, exact claims, period and visual scale before publication."
     },
     {

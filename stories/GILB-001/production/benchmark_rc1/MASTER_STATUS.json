@@ -7,11 +7,11 @@
     "exists_according_to_owner": true,
     "reported_status": "Original high-resolution video has the correct export size; reduction occurred when sharing to ChatGPT",
     "expected_dimensions": "1080x1920 portrait",
-    "archived_path": null,
-    "measured_width": null,
-    "measured_height": null,
-    "sha256": null,
-    "technical_check": "Pending access to original master file (no new render requested)"
+    "archived_path": "stories/GILB-001/production/final/GILB001_Hearts_of_Oak_Final.mp4",
+    "measured_width": 1080,
+    "measured_height": 1920,
+    "sha256": "fe3bc8ae4f2671d22d96c04ff7ad9eefffa11d92dfb61af78803c98621c801a4",
+    "technical_check": "2026-11-25: 1080x1920, 24 fps, 99.58 s, H.264 / AAC 48 kHz stereo, -14.0 LUFS integrated, -1.2 dBFS peak."
   },
   "chat_review_copy": {
     "path": "GILB001_Hearts_of_Oak_Creative_Benchmark_RC1.mp4",
@@ -19,5 +19,5 @@
     "purpose": "Compressed review/reference copy; not the technical-quality benchmark"
   },
   "re_export_required": false,
-  "publication_clearance": "Pending final data/rights/captions/technical sign-off"
+  "publication_clearance": "2026-11-25: claims verified and owner-approved; captions added. Open: music/SFX provenance record, phone playback check (ISS-003)."
 }

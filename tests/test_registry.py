@@ -49,6 +49,14 @@ class RegistryTest(unittest.TestCase):
         res=self.cmd('add-record','GILB-001','evidence','--field','claim=A claim','--field','verification_status=Needs verification','--field','safe_to_publish=Yes',ok=False)
         self.assertNotEqual(res.returncode,0)
         self.assertEqual(len(json.loads(self.story_file().read_text())['evidence']),0)
+    def test_excluded_claims_kept_but_not_blocking(self):
+        self.cmd('new-story','Scoped','--pillar','Sports & competition')
+        self.cmd('add-record','GILB-001','evidence','--field','claim=Approved claim','--field','source_url=https://example.org/proof','--field','verification_status=Verified','--field','checked_by=GilB','--field','checked_on=2026-11-25','--field','approved_by=GilB','--field','approval_date=2026-11-25','--field','safe_to_publish=Yes')
+        self.cmd('add-record','GILB-001','evidence','--field','claim=Retired claim','--field','safe_to_publish=No','--field','public_scope=Excluded')
+        self.cmd('set-story','GILB-001','--field','stage=Ready to publish')
+        self.assertEqual(len(json.loads(self.story_file().read_text())['evidence']),2)
+        res=self.cmd('add-record','GILB-001','evidence','--field','claim=Bad','--field','verification_status=Verified','--field','checked_by=GilB','--field','checked_on=2026-11-25','--field','approved_by=GilB','--field','approval_date=2026-11-25','--field','source_url=https://example.org','--field','safe_to_publish=Yes','--field','public_scope=Excluded',ok=False)
+        self.assertNotEqual(res.returncode,0)
     def test_publish_with_review_and_url(self):
         self.cmd('new-story','Reviewed','--pillar','Sports & competition')
         self.cmd('add-record','GILB-001','evidence','--field','claim=Claim with proof','--field','source_url=https://example.org/proof','--field','verification_status=Verified','--field','checked_by=GilB','--field','checked_on=2026-11-07','--field','approved_by=GilB','--field','approval_date=2026-11-07','--field','safe_to_publish=Yes')

@@ -18,7 +18,9 @@
     "video_url": "",
     "production_status": "Completed — owner approved",
     "production_completed_on": "2026-11-09",
-    "creative_benchmark": "GILB-001 benchmark RC1 (owner approved)"
+    "creative_benchmark": "GILB-001 benchmark RC1 (owner approved)",
+    "final_master_file": "stories/GILB-001/production/final/GILB001_Hearts_of_Oak_Final.mp4",
+    "final_master_sha256": "fe3bc8ae4f2671d22d96c04ff7ad9eefffa11d92dfb61af78803c98621c801a4"
   },
   "datasets": [
     {
@@ -388,6 +390,30 @@
       "updated_on": "2026-11-09",
       "quality_review": "Creative approval received. Final factual/rights/archive review tracked separately.",
       "notes": "GILB-001-PRODUCTION-CLOSEOUT-2026-11-09; video production finished; not a publication approval."
+    },
+    {
+      "id": "AS-056",
+      "name": "Final master video",
+      "path": "stories/GILB-001/production/final/GILB001_Hearts_of_Oak_Final.mp4",
+      "status": "Final master archived 2026-11-25: 1080x1920, 24 fps, 99.6 s, H.264/AAC 48 kHz stereo, -14.0 LUFS integrated, -1.2 dBFS peak. SHA-256 fe3bc8ae4f2671d22d96c04ff7ad9eefffa11d92dfb61af78803c98621c801a4. Copied unchanged from production/full_animation_v2/ (dated 2026-11-09, the production approval date).",
+      "asset_type": "Final video",
+      "version": "Final",
+      "owner": "GilB",
+      "updated_on": "2026-11-25",
+      "quality_review": "Owner-approved production (2026-11-09); claims approved 2026-11-25",
+      "notes": "Do not re-encode the archived master."
+    },
+    {
+      "id": "AS-057",
+      "name": "English captions (SRT)",
+      "path": "stories/GILB-001/production/final/GILB001_Hearts_of_Oak_Final.en.srt",
+      "status": "Created 2026-11-25: 22 cues, one per approved script line, timed from speech-recognition word timestamps of the final master (all script words matched).",
+      "asset_type": "Captions",
+      "version": "v1",
+      "owner": "GilB",
+      "updated_on": "2026-11-25",
+      "quality_review": "Text is the approved script; timing from speech recognition",
+      "notes": "Upload as the platform caption file."
     }
   ],
   "posts": [],
@@ -425,8 +451,8 @@
       "opened_on": "2026-11-09",
       "due": "",
       "status": "Open",
-      "resolution": "",
-      "next_action": "Use FINAL_RELEASE_QA.md and PRODUCTION_QUALITY_STANDARD_v1.md; explicitly approve every release claim."
+      "resolution": "2026-11-25 progress: match data verified and claims approved; captions created; loudness measured (-14.0 LUFS). Still open: provenance/licence record for the background music and sound effects, and a phone playback check (legibility, safe areas).",
+      "next_action": "GilB to record where the music and sound effects came from and their licence, and to watch the final on a phone; then close."
     },
     {
       "id": "ISS-004",
@@ -437,7 +463,7 @@
       "opened_on": "2026-11-09",
       "due": "",
       "status": "Open",
-      "resolution": "",
+      "resolution": "2026-11-25 note: the editable renderer for the v2 animation is in production/full_animation_v2/source/render.py. The final (99.6 s, narrated) was retimed from it; the retimed project and audio session are not in the repository.",
       "next_action": "Add Claude code/project/assets to private versioned storage and link the canonical folder."
     },
     {
@@ -448,8 +474,8 @@
       "owner": "GilB",
       "opened_on": "2026-11-09",
       "due": "",
-      "status": "Open",
-      "resolution": "",
+      "status": "Resolved",
+      "resolution": "2026-11-25: master archived at stories/GILB-001/production/final/GILB001_Hearts_of_Oak_Final.mp4 (in Git) with SHA-256 fe3bc8ae4f2671d22d96c04ff7ad9eefffa11d92dfb61af78803c98621c801a4; measured 1080x1920, 24 fps, 99.6 s, -14.0 LUFS.",
       "next_action": "Copy the original master into benchmark_rc1/ or store externally and record its link/hash."
     }
   ]

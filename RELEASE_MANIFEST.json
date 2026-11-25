@@ -1,4 +1,10 @@
 {
+  "GILB-001": {
+    "file": "GILB001_Hearts_of_Oak_Final.mp4",
+    "sha": "fe3bc8ae4f2671d22d96c04ff7ad9eefffa11d92dfb61af78803c98621c801a4",
+    "length": 7657956,
+    "duration": 99.583
+  },
   "GILB-003": {
     "file": "GILB003_Ghanas_Sleeping_Wallets_Final.mp4",
     "sha": "063f35f4633e66b7f94932a7900f7caa18649eb9e9ae0d96a221d7e9620d2ada",

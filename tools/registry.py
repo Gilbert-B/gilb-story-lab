@@ -23,7 +23,7 @@ COLUMNS = {
  'STORIES': ['id','title','pillar','angle','visual_format','audience','priority','stage','editorial_decision','claim_confidence','added_on','target_publish','owner','dataset_count','analysis_count','evidence_count','asset_count','next_action','blocker','video_url'],
  'DATA SOURCES': ['id','story_id','publisher','name','source_url','reference_period','granularity','classification','acquisition_status','acquired_on','raw_file','clean_file','reuse_license','quality_next_check','owner'],
  'ANALYSIS LOG': ['id','story_id','input_dataset_ids','question','approach','finding','run_date','status','output_file','peer_check','supporting_evidence_id','repro_notes','limitations'],
- 'EVIDENCE': ['id','story_id','claim','source_dataset_id','source_url','proof_file','verification_status','checked_by','checked_on','safe_to_publish','approved_by','approval_date','qualification'],
+ 'EVIDENCE': ['id','story_id','claim','source_dataset_id','source_url','proof_file','verification_status','checked_by','checked_on','safe_to_publish','approved_by','approval_date','qualification','public_scope'],
  'PRODUCTION': ['id','story_id','asset_type','version','name','path','status','owner','updated_on','quality_review','notes'],
  'PUBLISHING': ['id','story_id','platform','video_version','scheduled_date','actual_date','post_url','publish_status','views','avg_watch_time_s','completion_rate','likes','comments','shares','saves','followers_gained','learning'],
  'ISSUES & DECISIONS': ['id','story_id','type','description','priority','owner','opened_on','due','status','resolution','next_action']
@@ -84,8 +84,12 @@ def validate(root):
         for d in data.get('datasets',[]):
             if str(d.get('acquisition_status','')).lower() in ('acquired','downloaded') and not d.get('raw_file'):
                 errors.append(f'{sid}: {d.get("id")} marked acquired without raw_file')
+        for e in data.get('evidence',[]):
+            # Retired claims stay on file for audit with public_scope=Excluded; they can never be approved.
+            if str(e.get('public_scope','')).casefold()=='excluded' and str(e.get('safe_to_publish','')).casefold() in ('yes','true'):
+                errors.append(f'{sid}: {e.get("id")} is excluded from the public story but marked safe to publish')
         if s.get('stage') in ('Ready to publish','Published'):
-            ev=data.get('evidence',[])
+            ev=[e for e in data.get('evidence',[]) if str(e.get('public_scope','')).casefold()!='excluded']
             if not ev or any(str(e.get('safe_to_publish','')).lower()!='yes' for e in ev):
                 errors.append(f'{sid}: cannot mark ready/published with missing or unsafe evidence')
         if s.get('stage')=='Published':
